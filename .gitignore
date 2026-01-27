@@ -1,0 +1,7 @@
+test_output/
+*.png
+*.jpg
+__pycache__/
+*.pyc
+.DS_Store
+
