@@ -1,0 +1,50 @@
+{
+  "validation_summary": {
+    "pages_tested": [10, 15, 20],
+    "total_rules": 5,
+    "timestamp": "2026-01-27T18:15:00-05:00"
+  },
+  "rule_results": {
+    "R001_room_number": {
+      "confirmed": 1,
+      "variation": 2,
+      "contradicted": 0,
+      "status": "STABLE_WITH_VARIATIONS",
+      "note": "Format [NUM] seul plus courant que [BLOC]-[NUM]"
+    },
+    "R002_room_name": {
+      "confirmed": 3,
+      "variation": 0,
+      "contradicted": 0,
+      "status": "STABLE"
+    },
+    "R003_dimension": {
+      "confirmed": 3,
+      "variation": 0,
+      "contradicted": 0,
+      "status": "STABLE"
+    },
+    "R004_door": {
+      "confirmed": 2,
+      "variation": 1,
+      "contradicted": 0,
+      "status": "STABLE",
+      "note": "Non applicable sur pages de détails"
+    },
+    "R005_demolition": {
+      "confirmed": 2,
+      "variation": 0,
+      "contradicted": 0,
+      "status": "STABLE",
+      "note": "Testé implicitement sur pages démo"
+    }
+  },
+  "confidence_score": 0.85,
+  "can_generate_final": true,
+  "stable_rules": ["R002", "R003", "R004", "R005"],
+  "needs_refinement": ["R001"],
+  "recommendations": [
+    "R001: Accepter les deux formats (avec et sans préfixe bloc)",
+    "Ajouter règle pour identifier pages de détails vs plans d'étage"
+  ]
+}

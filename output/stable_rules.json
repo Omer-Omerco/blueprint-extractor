@@ -1,0 +1,74 @@
+[
+  {
+    "rule_id": "R001",
+    "kind": "room_number",
+    "patterns": [
+      "\\d{3}",
+      "[A-D]-\\d{2,3}",
+      "[A-D]\\d\\.\\d{2}"
+    ],
+    "confidence": 0.85,
+    "description": "Numéro de local (3 chiffres, ou préfixe bloc)"
+  },
+  {
+    "rule_id": "R002",
+    "kind": "room_name",
+    "patterns": [
+      "CLASSE",
+      "CLASSE MATERNELLE",
+      "CORRIDOR",
+      "GYMNASE",
+      "BUREAU",
+      "BUREAU DIRECTION",
+      "VESTIBULE",
+      "TOILETTES",
+      "SERVICE DE GARDE",
+      "CHAUFFERIE",
+      "SALLE MÉCANIQUE",
+      "CONCIERGERIE",
+      "SALLE DES PROFS",
+      "LOCAL TECHNOPÉDAGO"
+    ],
+    "confidence": 0.92,
+    "description": "Nom de local en majuscules"
+  },
+  {
+    "rule_id": "R003",
+    "kind": "dimension",
+    "patterns": [
+      "\\d{1,3}'-\\d{1,2}\"",
+      "\\d{1,3}'-\\d{1,2}\\s+\\d/\\d\""
+    ],
+    "confidence": 0.90,
+    "description": "Dimension pieds-pouces avec fractions optionnelles",
+    "conversion": "total_inches = (feet * 12) + inches + fraction"
+  },
+  {
+    "rule_id": "R004",
+    "kind": "door",
+    "detection": "arc_90_degrees_from_wall_opening",
+    "confidence": 0.88,
+    "description": "Porte = arc 90° indiquant sens d'ouverture"
+  },
+  {
+    "rule_id": "R005",
+    "kind": "demolition",
+    "visual_markers": [
+      "dashed_line",
+      "cross_hatch",
+      "cloud_outline"
+    ],
+    "confidence": 0.85,
+    "description": "Éléments à démolir = pointillés ou hachures"
+  },
+  {
+    "rule_id": "R006",
+    "kind": "area",
+    "patterns": [
+      "\\d+\\.\\d{2}\\s*P\\.CA",
+      "\\d+\\s*pi²"
+    ],
+    "confidence": 0.82,
+    "description": "Superficie en pieds carrés"
+  }
+]
