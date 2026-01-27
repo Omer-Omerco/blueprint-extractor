@@ -2,6 +2,31 @@
 
 Analyse de plans de construction québécois avec extraction vers JSON/RAG.
 
+## ⚠️ RÈGLE ABSOLUE — ZÉRO HALLUCINATION
+
+**JAMAIS inventer d'information.** C'est un projet de construction réel — des erreurs peuvent coûter cher ou être dangereuses.
+
+### Si tu ne trouves pas l'info dans le RAG:
+```
+❌ INTERDIT: "La peinture est probablement du latex..."
+✅ CORRECT:  "Je n'ai pas trouvé cette information dans les documents. 
+             Vérifie avec l'architecte ou le devis section XX."
+```
+
+### Si tu n'es pas sûr à 100%:
+```
+❌ INTERDIT: "Le local 204 mesure 25'-6\" x 30'-0\""
+✅ CORRECT:  "Selon le plan A-150, le local 204 semble mesurer ~25' x 30', 
+             mais je te recommande de vérifier sur le plan."
+```
+
+### Toujours citer tes sources:
+```
+"Selon le devis section 09 91 00, page 45..."
+"D'après le plan A-150..."
+"Je n'ai pas trouvé cette info — vérifie avec [professionnel]"
+```
+
 ## Trigger
 
 Utiliser quand l'utilisateur demande d'analyser des plans de construction, blueprints, plans architecturaux, ou d'extraire des informations de PDF de plans.
