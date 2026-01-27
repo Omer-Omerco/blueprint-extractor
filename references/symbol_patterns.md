@@ -1,261 +1,115 @@
-# Symbol Patterns - Plans Architecturaux Québécois
+# Symboles de Plans Architecturaux — Québec
 
-## Symboles Standards
+## Symboles de Démolition
 
-### Murs
+| Symbole | Description | Apparence |
+|---------|-------------|-----------|
+| ---X--- | Mur à démolir | Ligne avec X espacés |
+| ═══════ | Plancher à démolir | Double ligne |
+| ░░░░░░░ | Zone hachurée démolition | Hachurage diagonal |
+| ▓▓▓▓▓▓▓ | Élément existant à conserver | Hachurage dense |
 
-| Symbole | Description | Détection Visuelle |
-|---------|-------------|-------------------|
-| █████ | Mur existant | Ligne épaisse continue, rempli noir |
-| ▓▓▓▓▓ | Mur à construire | Ligne épaisse, parfois hachuré |
-| ░░░░░ | Mur à démolir | Ligne pointillée ou hachuré X |
-| ┃ ┃ | Mur intérieur | Double ligne parallèle |
-| ║ ║ | Mur extérieur | Double ligne plus épaisse |
-| ╳╳╳╳ | Démolition | Hachures croisées ou cloudé |
-
-### Patterns de Démolition
-```
-Lignes pointillées: ---- ---- ----
-Hachures croisées:  ╳ ╳ ╳ ╳ ╳
-Cloud/Nuage:        ☁ (contour ondulé)
-Couleur:            Souvent en ROUGE ou JAUNE
-```
-
----
-
-## Portes
-
-### Types de Portes
+## Symboles de Portes
 
 | Symbole | Type | Description |
 |---------|------|-------------|
-| ⌒ | Porte simple | Arc de 90° indiquant le sens d'ouverture |
-| ⌓ | Porte double | Deux arcs opposés |
-| ⊏ | Porte coulissante | Ligne avec flèche directionnelle |
-| ⟲ | Porte pivotante | Cercle avec pivot central |
-| ⫽ | Porte pliante | Ligne en accordéon |
+| Arc 90° | Porte standard | Arc indique le sens d'ouverture |
+| Arc 180° | Porte double | Deux battants |
+| Rectangle | Porte coulissante | Pas d'arc |
+| Cercle | Porte pivotante | Rotation centrale |
 
-### Annotations de Portes
-```
-P-01   → Numéro de porte (référence à schedule)
-3'-0"  → Largeur
-A      → Type (selon légende)
-90°    → Angle d'ouverture
-```
+### Détection Géométrique
 
-### Pattern de Porte (Arc)
-```
-     ╭────╮
-     │    │
-     │    │  ← Cadre
-─────╯    ╰─────
-      ╲
-       ╲   ← Arc d'ouverture (rayon = largeur porte)
-        ╲
+```python
+def detect_door_symbol(elements):
+    """Detect door by arc + line pattern."""
+    # Une porte = arc de cercle + ligne (battant)
+    # L'arc indique l'angle d'ouverture (généralement 90°)
+    pass
 ```
 
----
+## Symboles de Fenêtres
 
-## Fenêtres
+| Symbole | Type |
+|---------|------|
+| ═══════ | Fenêtre fixe |
+| ══╪══ | Fenêtre ouvrante |
+| ══◊══ | Fenêtre à battant |
 
-### Types de Fenêtres
+### Caractéristiques
+- Lignes parallèles dans le mur
+- Largeur variable (indiquée par cotation)
+- Orientées vers l'extérieur
 
-| Symbole | Type | Description |
-|---------|------|-------------|
-| ═══ | Fenêtre fixe | Trois lignes parallèles dans le mur |
-| ⊞ | Fenêtre à battant | Croix ou X dans le cadre |
-| ↔ | Fenêtre coulissante | Flèches horizontales |
-| ↕ | Fenêtre guillotine | Flèches verticales |
+## Notes et Références
 
-### Annotations de Fenêtres
-```
-F-01   → Numéro de fenêtre
-4'-0" × 5'-0"  → Largeur × Hauteur
-2'-6" A.F.F.   → Hauteur d'allège (Above Finished Floor)
-```
+| Symbole | Signification |
+|---------|---------------|
+| ① ② ③ | Note numérotée (cercle) |
+| ▲ | Renvoi vers détail |
+| ◊ | Note losange |
+| ■ | Référence section |
 
-### Pattern de Fenêtre
-```
-████╔═══╗████
-    ║   ║      ← Vitrage (lignes fines)
-████╚═══╝████
-```
-
----
-
-## Symboles de Référence
-
-### Numéros de Détail/Coupe
+### Tags de Finition (exemple)
 
 ```
-    ╭───╮
-    │ 5 │   ← Numéro de détail
-    ├───┤
-    │A-3│   ← Feuille de référence
-    ╰───╯
+┌─────┐
+│ 23  │  ← Numéro de finition plancher
+├─────┤
+│ 52  │  ← Numéro de finition mur
+└─────┘
 ```
 
-### Cercle de Référence
-```
-    ( 5 )     → Numéro de détail
-    ─────     → Ligne de coupe
-    A-301     → Feuille où voir le détail
-```
-
-### Flèche de Coupe
-```
-    ◄─────────────►
-    ↓             ↓
-   A-3           A-3
-   
-Direction de vue ───►
-```
-
-### Symboles de Niveau
-
-```
-    ▽ 100'-0"   → Niveau de référence (benchmark)
-    △ +12'-0"   → Élévation relative
-    ○ FFE       → Finished Floor Elevation
-```
-
----
-
-## Symboles Électriques/Mécaniques
-
-### Électrique
+## Symboles Mécaniques (sur plans archi)
 
 | Symbole | Description |
 |---------|-------------|
-| ⊕ | Luminaire au plafond |
-| ◎ | Luminaire encastré |
-| ⊙ | Prise de courant |
-| ⊛ | Prise double |
-| ▣ | Panneau électrique |
-| ⚡ | Interrupteur |
+| ⊗ | Diffuseur plafond |
+| ▢ | Grille de retour |
+| ◯ | Luminaire |
+| ⬡ | Détecteur fumée |
 
-### Mécanique (CVAC)
+## Échelles Standards
 
-| Symbole | Description |
-|---------|-------------|
-| □ | Diffuseur d'air |
-| ○ | Grille de retour |
-| ⊞ | Registre |
-| ═══ | Conduit |
-| ─── | Tuyauterie |
+| Échelle | Usage |
+|---------|-------|
+| 1:100 | Plans d'étage |
+| 1:50 | Détails importants |
+| 1:20 | Détails construction |
+| 1:10 | Détails menuiserie |
+| 1:5 | Détails fins |
 
-### Plomberie
+## Légende Type (LÉGENDE-SYMBOLES)
 
-| Symbole | Description |
-|---------|-------------|
-| ◇ | Drain de plancher |
-| ⊡ | Lavabo |
-| ⬭ | Toilette |
-| ⬬ | Urinoir |
-
----
-
-## Annotations Textuelles
-
-### Abréviations Courantes
-
-| Abrév. | Signification |
-|--------|---------------|
-| EX. | Existant |
-| NOUV. | Nouveau |
-| DÉM. | À démolir |
-| TYP. | Typique |
-| SIM. | Similaire |
-| V.I.F. | Vérifier in field |
-| N.T.S. | Not to scale |
-| MIN. | Minimum |
-| MAX. | Maximum |
-| APPROX. | Approximatif |
-| RÉF. | Référence |
-| VOIR | Voir détail/plan |
-| N/A | Non applicable |
-
-### Notes de Construction
-
-| Note | Signification |
-|------|---------------|
-| PHASE 1 | Travaux première phase |
-| PHASE 2 | Travaux deuxième phase |
-| ALT. | Alternatif/Option |
-| COND. | Conditionnel |
-| PROP. | Proposé |
-| APPR. | Approuvé |
-
----
-
-## Patterns de Détection Visuelle
-
-### Contours de Démolition (Cloud)
-```
-Caractéristiques:
-- Contour ondulé/nuageux autour des éléments
-- Couleur: souvent rouge ou magenta
-- Texte: "DÉM." ou "À DÉMOLIR" à proximité
-- Hachures croisées à l'intérieur
-```
-
-### Nouveau vs Existant
-```
-EXISTANT:
-- Lignes grises ou noires fines
-- Parfois en arrière-plan (light gray)
-
-NOUVEAU:
-- Lignes noires épaisses
-- Remplissage solid
-- Annotation "NOUV." possible
-```
-
-### Limites de Travaux
-```
-─ ─ ─ ─ ─   Ligne tiretée: limite de contrat
-─ · ─ · ─   Ligne mixte: limite de propriété
-═══════════  Ligne double: limite de phase
-```
-
----
-
-## Extraction de Symboles
-
-### Ordre de Priorité
-1. **Murs** - Structure de base
-2. **Portes** - Ouvertures principales
-3. **Fenêtres** - Ouvertures secondaires
-4. **Annotations** - Numéros et notes
-5. **Symboles MEP** - Si présents
-
-### Tips OCR/Vision
-- Les symboles sont souvent standardisés (CAD blocks)
-- Chercher les répétitions pour identifier les patterns
-- Les légendes définissent les symboles spécifiques au projet
-- La couleur peut indiquer le statut (existant/nouveau/démolir)
-
----
-
-## Légende Standard (Template)
+Les plans incluent généralement une légende en page 1 ou dans un cartouche:
 
 ```
-LÉGENDE DES SYMBOLES
+LÉGENDE-SYMBOLES — DÉMOLITION PLANCHERS
 
-███████  MUR EXISTANT À CONSERVER
-▓▓▓▓▓▓▓  MUR NOUVEAU
-╳╳╳╳╳╳╳  MUR EXISTANT À DÉMOLIR
-
-⌒        PORTE (arc = sens ouverture)
-═══      FENÊTRE
-◇        DRAIN DE PLANCHER
-
-⊕        LUMINAIRE
-⊙        PRISE ÉLECTRIQUE
-
-─────    LIMITE DES TRAVAUX
-─ ─ ─    DÉMOLITION
-
-NOTE: SE RÉFÉRER AUX PLANS SPÉCIALISÉS
-      POUR DÉTAILS MEP
+---X---  Cloison plâtre à démolir
+═══════  Éléments à démolir
+░░░░░░░  Zone d'intervention amiante
+▓▓▓▓▓▓▓  Éléments existants à conserver
 ```
+
+## Cartouche Standard
+
+```
+┌────────────────────────────────────────┐
+│ CLIENT:          [Nom client]          │
+│ PROJET:          [Nom projet]          │
+│ TITRE DU DESSIN: [Description]         │
+│ NO DOSSIER:      [24014]               │
+│ NO DOSSIER CLIENT: [23-333]            │
+│ ÉCHELLE:         [1:100]               │
+│ DESSINÉ PAR:     [Initiales]           │
+│ VÉRIFIÉ PAR:     [Initiales]           │
+│ DATE:            [YYYY-MM-DD]          │
+│ DIVISION:        [A]  PAGE: [100]      │
+└────────────────────────────────────────┘
+```
+
+Ce cartouche permet d'identifier:
+- Le projet
+- Le type de plan (A=Archi, S=Structure, M=Méca, E=Élec)
+- La page/feuille
