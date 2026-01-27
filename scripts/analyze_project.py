@@ -202,7 +202,8 @@ def call_agent(
 def run_pipeline(
     pages_dir: str,
     output_dir: str,
-    model: str = "claude-sonnet-4-20250514"
+    model: str = "claude-sonnet-4-20250514",
+    api_key: Optional[str] = None
 ) -> dict:
     """Run the 4-agent pipeline."""
     
@@ -222,7 +223,10 @@ def run_pipeline(
     print(f"Project: {manifest['source_pdf']}")
     print(f"Pages: {manifest['page_count']}")
     
-    client = anthropic.Anthropic()
+    if api_key:
+        client = anthropic.Anthropic(api_key=api_key)
+    else:
+        client = anthropic.Anthropic()  # Uses ANTHROPIC_API_KEY env var
     
     # Agent 1: Guide Builder
     print("\n[Agent 1] Building provisional guide...")
@@ -346,6 +350,10 @@ def main():
         help="Claude model to use"
     )
     parser.add_argument(
+        "--api-key",
+        help="Anthropic API key (or set ANTHROPIC_API_KEY env var)"
+    )
+    parser.add_argument(
         "--json",
         action="store_true",
         help="Output full result as JSON to stdout"
@@ -353,7 +361,7 @@ def main():
     
     args = parser.parse_args()
     
-    result = run_pipeline(args.pages_dir, args.output, args.model)
+    result = run_pipeline(args.pages_dir, args.output, args.model, args.api_key)
     
     if args.json:
         print(json.dumps(result, indent=2, ensure_ascii=False))

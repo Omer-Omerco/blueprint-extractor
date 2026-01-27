@@ -169,7 +169,8 @@ def run_extraction(
     pages_dir: str,
     output_dir: str,
     model: str = "claude-sonnet-4-20250514",
-    max_pages: Optional[int] = None
+    max_pages: Optional[int] = None,
+    api_key: Optional[str] = None
 ) -> dict:
     """Extract objects from all pages."""
     
@@ -196,7 +197,10 @@ def run_extraction(
     
     print(f"Extracting objects from {len(pages)} pages...")
     
-    client = anthropic.Anthropic()
+    if api_key:
+        client = anthropic.Anthropic(api_key=api_key)
+    else:
+        client = anthropic.Anthropic()  # Uses ANTHROPIC_API_KEY env var
     
     all_rooms = []
     all_doors = []
@@ -314,6 +318,10 @@ def main():
         help="Maximum pages to process"
     )
     parser.add_argument(
+        "--api-key",
+        help="Anthropic API key (or set ANTHROPIC_API_KEY env var)"
+    )
+    parser.add_argument(
         "--json",
         action="store_true",
         help="Output summary as JSON"
@@ -326,7 +334,8 @@ def main():
         args.pages,
         args.output,
         args.model,
-        args.max_pages
+        args.max_pages,
+        args.api_key
     )
     
     if args.json:

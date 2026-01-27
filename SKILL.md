@@ -17,6 +17,11 @@ Extrait les données des plans de construction vers un RAG JSON searchable.
 ## Quick Start
 
 ```bash
+# Activer l'environnement
+cd skills/blueprint-extractor
+source .venv/bin/activate
+export ANTHROPIC_API_KEY="sk-ant-..."
+
 # 1. Extraire les pages du PDF
 python scripts/extract_pages.py /path/to/plans.pdf --output ./extracted/
 
@@ -24,10 +29,10 @@ python scripts/extract_pages.py /path/to/plans.pdf --output ./extracted/
 python scripts/analyze_project.py ./extracted/ --output ./analysis/
 
 # 3. Extraire les objets (rooms, doors, dimensions)
-python scripts/extract_objects.py ./analysis/ --output ./rag/
+python scripts/extract_objects.py ./analysis/guide.json --pages ./extracted/ --output ./analysis/
 
 # 4. Construire le RAG
-python scripts/build_rag.py ./rag/
+python scripts/build_rag.py ./analysis/ --output ./rag/
 
 # 5. Query
 python scripts/query_rag.py ./rag/ "dimensions classe 204"
@@ -40,6 +45,16 @@ python scripts/query_rag.py ./rag/ "dimensions classe 204"
 - Superficie: `pi²` (pieds carrés)
 
 Voir `references/dimension_patterns.md` pour les patterns regex.
+
+## Configuration
+
+```bash
+# Clé API Anthropic (requis pour l'analyse vision)
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+# Ou passer en argument aux scripts
+python scripts/analyze_project.py ./pages --api-key "sk-ant-..."
+```
 
 ## Pipeline 4-Agents
 
@@ -85,25 +100,21 @@ project-rag/
     "depth": "30'-0\"",
     "area_sqft": 765
   },
-  "bloc": "B",
-  "floor": 2
+  "page": 4
 }
 ```
 
 ## Dépendances
 
-- `poppler` (pdftoppm) — extraction PDF
-- `anthropic` SDK — Claude vision API
-- Python 3.10+
-
 ```bash
 # macOS
 brew install poppler
-pip install anthropic
 
-# Ubuntu
-apt-get install poppler-utils
-pip install anthropic
+# Créer l'environnement Python
+cd skills/blueprint-extractor
+python3 -m venv .venv
+source .venv/bin/activate
+pip install anthropic pymupdf pillow
 ```
 
 ## Références
