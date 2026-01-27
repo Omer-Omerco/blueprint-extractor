@@ -1,124 +1,166 @@
----
-name: blueprint-extractor
-description: Analyse de plans de construction (PDF) et extraction vers RAG JSON. Utiliser pour extraire dimensions, locaux, portes, fenêtres de plans architecturaux. Supporte format Québec (pieds-pouces). Pipeline 4-agents vision AI.
----
-
 # Blueprint Extractor
 
-Extrait les données des plans de construction vers un RAG JSON searchable.
+Analyse de plans de construction québécois avec extraction vers JSON/RAG.
 
-## Cas d'usage
+## Trigger
 
-- "Quelles sont les dimensions de la classe 204?"
-- "Liste tous les locaux du Bloc A"
-- "Trouve les portes du corridor principal"
-- "Superficie totale de l'étage 2"
+Utiliser quand l'utilisateur demande d'analyser des plans de construction, blueprints, plans architecturaux, ou d'extraire des informations de PDF de plans.
 
-## Quick Start
+## Vue d'ensemble
+
+Ce skill extrait les données structurées (locaux, portes, fenêtres, dimensions) de plans de construction PDF en utilisant un pipeline vision à 4 agents.
+
+**Important:** Toutes les dimensions sont en **PIEDS ET POUCES** (standard Québec).
+
+## Workflow
+
+### Étape 1: Extraction des pages (script)
 
 ```bash
-# Activer l'environnement
-cd skills/blueprint-extractor
+cd /Users/omer/clawd/skills/blueprint-extractor
 source .venv/bin/activate
-export ANTHROPIC_API_KEY="sk-ant-..."
-
-# 1. Extraire les pages du PDF
-python scripts/extract_pages.py /path/to/plans.pdf --output ./extracted/
-
-# 2. Analyser avec le pipeline 4-agents
-python scripts/analyze_project.py ./extracted/ --output ./analysis/
-
-# 3. Extraire les objets (rooms, doors, dimensions)
-python scripts/extract_objects.py ./analysis/guide.json --pages ./extracted/ --output ./analysis/
-
-# 4. Construire le RAG
-python scripts/build_rag.py ./analysis/ --output ./rag/
-
-# 5. Query
-python scripts/query_rag.py ./rag/ "dimensions classe 204"
+python scripts/extract_pages.py "/chemin/vers/plans.pdf" -o ./output/pages -p 1-10
 ```
 
-## Unités — IMPORTANT
+Ceci génère des images PNG haute résolution (300 DPI) + `manifest.json`.
 
-**TOUJOURS en pieds et pouces (impérial québécois):**
-- Dimensions: `25'-6"`, `±8'-0"`, `12'-6 5/8"`
-- Superficie: `pi²` (pieds carrés)
+### Étape 2: Sélection des pages clés
 
-Voir `references/dimension_patterns.md` pour les patterns regex.
+Parmi les pages extraites, identifier visuellement:
+1. **LEGEND** (légende des symboles) — priorité maximale
+2. **PLANS D'ÉTAGE** (floor plans) — pages avec locaux numérotés
 
-## Configuration
+Sélectionner 5 pages max pour l'analyse initiale.
 
-```bash
-# Clé API Anthropic (requis pour l'analyse vision)
-export ANTHROPIC_API_KEY="sk-ant-..."
+### Étape 3: Pipeline 4 Agents (toi-même)
 
-# Ou passer en argument aux scripts
-python scripts/analyze_project.py ./pages --api-key "sk-ant-..."
-```
+**Tu ES les 4 agents.** Exécute-les en séquence:
 
-## Pipeline 4-Agents
+#### Agent 1: Guide Builder
+Charge les 5 pages sélectionnées avec le tool `image` et analyse:
+- Symboles et leur signification (légende)
+- Patterns de cotation (dimensions pieds-pouces)
+- Conventions visuelles (portes = arcs, fenêtres = lignes parallèles)
+- Noms de locaux (CLASSE, CORRIDOR, S.D.B., etc.)
 
-Le skill utilise 4 agents vision pour analyser les plans:
+**Output:** `provisional_guide` (markdown) + `candidate_rules` (JSON)
 
-### Agent 1: Guide Builder
-Analyse 5 pages sélectionnées (LEGEND first), extrait patterns et règles.
+#### Agent 2: Guide Applier
+Charge 3 AUTRES pages et valide chaque règle:
+- CONFIRMED: la règle fonctionne
+- CONTRADICTED: la règle est fausse
+- VARIATION: légère différence acceptable
 
-### Agent 2: Guide Applier  
-Valide les règles sur 3-5 pages supplémentaires.
+**Output:** `validation_reports` par page
 
-### Agent 3: Self-Validator
-Calcule un score de confiance (0.0-1.0).
+#### Agent 3: Self-Validator
+Analyse les rapports de validation:
+- `confidence_score`: 0.0 - 1.0
+- `can_generate_final`: true si confidence ≥ 0.7
+- `stable_rules`: liste des règles confirmées
 
-### Agent 4: Consolidator
-Génère le guide final et les règles JSON.
+#### Agent 4: Consolidator
+Génère le guide final:
+- `stable_guide.md`: guide markdown lisible
+- `stable_rules.json`: règles machine-executable
 
-Voir `assets/prompts/` pour les prompts de chaque agent.
+### Étape 4: Extraction des objets
 
-## Output RAG
-
-```
-project-rag/
-├── index.json          # Index principal
-├── guide.md            # Guide stable
-├── rooms.json          # Locaux avec dimensions
-├── doors.json          # Portes
-├── dimensions.json     # Toutes les cotes
-├── legend.json         # Symboles
-└── pages/
-    └── page-XXX.json   # Données par page
-```
-
-### Format Room
+Pour CHAQUE page, extrais avec vision:
 
 ```json
 {
-  "id": "room-204",
-  "name": "CLASSE",
-  "number": "204",
-  "dimensions": {
-    "width": "25'-6\"",
-    "depth": "30'-0\"",
-    "area_sqft": 765
-  },
-  "page": 4
+  "rooms": [
+    {
+      "id": "101",
+      "name": "CLASSE",
+      "dimensions": "25'-6\" x 30'-0\"",
+      "area_sqft": 765,
+      "page": 3
+    }
+  ],
+  "doors": [
+    {
+      "id": "P-01",
+      "type": "simple",
+      "width": "3'-0\"",
+      "swing_angle": 90,
+      "page": 3
+    }
+  ],
+  "windows": [...],
+  "dimensions": [...]
 }
 ```
 
-## Dépendances
+### Étape 5: Build RAG (script)
 
 ```bash
-# macOS
-brew install poppler
-
-# Créer l'environnement Python
-cd skills/blueprint-extractor
-python3 -m venv .venv
-source .venv/bin/activate
-pip install anthropic pymupdf pillow
+python scripts/build_rag.py ./output -o ./output/rag
 ```
 
-## Références
+### Étape 6: Query (script ou toi)
 
-- `references/dimension_patterns.md` — Patterns pieds-pouces
-- `references/room_patterns.md` — Noms locaux québécois
-- `references/symbol_patterns.md` — Symboles plans archi
+```bash
+python scripts/query_rag.py ./output/rag "classe 204"
+```
+
+Ou toi directement: lis `./output/rag/index.json` et réponds aux questions.
+
+## Référence Patterns
+
+### Dimensions (pieds-pouces)
+- Standard: `25'-6"` (25 pieds 6 pouces)
+- Avec fraction: `12'-6 5/8"`
+- Conversion: `(pieds × 12) + pouces = pouces totaux`
+
+### Noms de locaux québécois
+| Abrév. | Nom complet |
+|--------|-------------|
+| S.D.B. | Salle de bain |
+| W.C. | Toilettes |
+| CORR. | Corridor |
+| RANG. | Rangement |
+| MÉC. | Salle mécanique |
+| ÉLEC. | Salle électrique |
+
+### Symboles courants
+- **Porte:** Arc 90° avec ligne (direction d'ouverture)
+- **Fenêtre:** 3 lignes parallèles dans l'épaisseur du mur
+- **Mur existant:** Ligne pleine épaisse
+- **Mur à démolir:** Hachuré ou pointillé
+
+## Fichiers du skill
+
+```
+blueprint-extractor/
+├── SKILL.md                 # Ce fichier
+├── scripts/
+│   ├── extract_pages.py     # PDF → images (seul script nécessaire en externe)
+│   ├── build_rag.py         # Construit l'index RAG
+│   └── query_rag.py         # Requêtes RAG
+├── references/
+│   ├── dimension_patterns.md
+│   ├── room_patterns.md
+│   └── symbol_patterns.md
+├── assets/prompts/          # Prompts pour les 4 agents (référence)
+└── tests/                   # Suite de tests pytest
+```
+
+## Exemple d'utilisation
+
+**User:** "Analyse le plan de l'école Enfant-Jésus"
+
+**Toi:**
+1. Extrais les pages: `python scripts/extract_pages.py "/path/to/C25-256.pdf" -o ./output/pages`
+2. Charge 5 pages avec `image` tool
+3. Exécute le pipeline 4 agents
+4. Sauvegarde les résultats en JSON
+5. Build le RAG
+6. Réponds aux questions: "La classe 204 fait 25'-6\" x 30'-0\" (765 pi²)"
+
+## Notes
+
+- Les tests passent: `pytest tests/ -v` (129 tests)
+- Toujours utiliser pieds-pouces, JAMAIS le métrique
+- Confiance minimale pour générer le guide final: 0.7
