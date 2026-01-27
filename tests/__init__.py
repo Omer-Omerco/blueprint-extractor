@@ -1,0 +1,1 @@
+# blueprint-extractor test suite

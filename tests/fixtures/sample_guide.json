@@ -1,0 +1,73 @@
+{
+  "status": "VALIDATED",
+  "confidence_score": 0.85,
+  "stable_guide": "# Guide des Plans - École Primaire Québec\n\n## Conventions de dimensions\n- Toutes les dimensions sont en **pieds et pouces** (format: X'-Y\")\n- Superficie en **pi²** (pieds carrés)\n- Hauteur standard des plafonds: 8'-0\"\n\n## Codes de locaux\n- CLASSE: Salle de classe\n- CORRIDOR: Couloir de circulation\n- S.D.B.: Salle de bain\n- RANGEMENT: Espace de rangement\n- GYMNASE: Gymnase\n- CAFÉTÉRIA: Cafétéria\n- ADMIN: Bureau administratif\n\n## Symboles portes\n- Arc 90°: Porte standard\n- Arc 180°: Porte double\n- Ligne pointillée: Porte coulissante",
+  "stable_rules": [
+    {
+      "kind": "dimension",
+      "pattern": "\\d+'-\\d+\"",
+      "description": "Format pieds-pouces standard québécois"
+    },
+    {
+      "kind": "room",
+      "pattern": "\\d{3}",
+      "description": "Numérotation à 3 chiffres pour les locaux"
+    },
+    {
+      "kind": "door",
+      "pattern": "P\\d+",
+      "description": "Portes numérotées avec préfixe P"
+    }
+  ],
+  "legend": [
+    {
+      "symbol": "▢",
+      "meaning": "Prise électrique",
+      "category": "électrique"
+    },
+    {
+      "symbol": "△",
+      "meaning": "Sortie de secours",
+      "category": "sécurité"
+    },
+    {
+      "symbol": "○",
+      "meaning": "Luminaire",
+      "category": "électrique"
+    }
+  ],
+  "builder_result": {
+    "observations": [
+      {"type": "dimension", "description": "Utilisation systématique de pieds-pouces", "page": 1},
+      {"type": "legend", "description": "Légende complète en page 1", "page": 1}
+    ],
+    "candidate_rules": [
+      {"rule": "Dimensions en format X'-Y\"", "confidence": 0.95},
+      {"rule": "Numéros de locaux à 3 chiffres", "confidence": 0.90}
+    ],
+    "legend_extractions": [
+      {"symbol": "▢", "meaning": "Prise électrique"},
+      {"symbol": "△", "meaning": "Sortie de secours"}
+    ],
+    "provisional_guide": "# Guide provisoire..."
+  },
+  "applier_result": {
+    "validation_reports": [
+      {"rule": "Dimensions en format X'-Y\"", "status": "CONFIRMED", "evidence": "Trouvé 25'-6\" sur page 3", "page": 3},
+      {"rule": "Numéros de locaux à 3 chiffres", "status": "CONFIRMED", "evidence": "Local 101, 102, 103", "page": 2}
+    ]
+  },
+  "validator_result": {
+    "can_generate_final": true,
+    "confidence_score": 0.85,
+    "stable_count": 5,
+    "partial_count": 1,
+    "unstable_count": 0,
+    "stable_rules": ["Dimensions en format X'-Y\"", "Numéros de locaux à 3 chiffres"],
+    "issues": []
+  },
+  "consolidator_result": {
+    "stable_guide": "# Guide Stable...",
+    "stable_rules_json": []
+  }
+}

@@ -1,0 +1,16 @@
+# Development dependencies for blueprint-extractor
+# Install with: pip install -r requirements-dev.txt
+
+# Testing
+pytest>=7.4.0
+pytest-mock>=3.12.0
+pytest-cov>=4.1.0
+
+# Type checking (optional)
+mypy>=1.8.0
+
+# Linting (optional)
+ruff>=0.1.0
+
+# The main dependencies (also needed for tests)
+anthropic>=0.18.0
