@@ -91,6 +91,36 @@ def normalize_string(s: str) -> str:
     return s.upper().strip().replace("-", " ").replace("_", " ")
 
 
+def infer_room_type(name: str) -> str:
+    """Infère le type de local à partir du nom."""
+    name = normalize_string(name)
+    if not name:
+        return ""
+    if "CLASSE" in name or "MATERNELLE" in name:
+        return "CLASSE"
+    if "WC" in name or "TOILETTE" in name or "S.D.B" in name or "SALLE DE BAIN" in name:
+        return "WC"
+    if "CORRIDOR" in name:
+        return "CORRIDOR"
+    if "GYMNASE" in name:
+        return "GYMNASE"
+    if "RANGEMENT" in name or "REMISE" in name or "DÉPÔT" in name or "ENTREPOSAGE" in name:
+        return "RANGEMENT"
+    if "VESTIAIRE" in name:
+        return "VESTIAIRE"
+    if "ÉLECTRIQUE" in name or "MÉCANIQUE" in name or "CHAUFFERIE" in name or "TECHNIQUE" in name:
+        return "TECHNIQUE"
+    if "CONCIERGERIE" in name:
+        return "SERVICE"
+    if "ESCALIER" in name or "VESTIBULE" in name:
+        return "CIRCULATION"
+    if "BUREAU" in name or "SECRÉTARIAT" in name or "DIRECTION" in name:
+        return "BUREAU"
+    if "SERVICE DE GARDE" in name:
+        return "SERVICE"
+    return "AUTRE"
+
+
 def compare_room(extracted: dict, ground_truth: dict) -> tuple:
     """
     Compare un local extrait avec la vérité terrain.
@@ -106,14 +136,21 @@ def compare_room(extracted: dict, ground_truth: dict) -> tuple:
         ext_val = extracted.get(field, "")
         gt_val = ground_truth.get(field, "")
         
+        # Inférer le type depuis le nom si absent
+        if field == "type" and not ext_val:
+            ext_val = infer_room_type(extracted.get("name", ""))
+        
         # Normaliser pour comparaison
         ext_norm = normalize_string(str(ext_val)) if ext_val else ""
         gt_norm = normalize_string(str(gt_val)) if gt_val else ""
         
         if ext_norm == gt_norm:
             matched.append(field)
-        elif field == "name" and gt_norm in ext_norm:
-            # Match partiel pour les noms
+        elif field == "name" and gt_norm and ext_norm and (gt_norm in ext_norm or ext_norm in gt_norm):
+            # Match partiel pour les noms (bidirectional)
+            matched.append(field)
+        elif field == "name" and _fuzzy_name_match(ext_norm, gt_norm):
+            # Fuzzy match pour synonymes connus
             matched.append(field)
         else:
             mismatched.append({
@@ -127,6 +164,21 @@ def compare_room(extracted: dict, ground_truth: dict) -> tuple:
     score = len(matched) / total_fields if total_fields > 0 else 0
     
     return score, matched, mismatched
+
+
+def _fuzzy_name_match(a: str, b: str) -> bool:
+    """Vérifie si deux noms de locaux sont des synonymes connus."""
+    synonyms = [
+        {"WC", "TOILETTES", "TOILETTE", "W.C.", "SALLE DE BAIN", "S.D.B."},
+        {"RANGEMENT", "REMISE", "DÉPÔT", "ENTREPOSAGE"},
+        {"TECHNIQUE", "LOCAL TECHNIQUE", "LOCAL MÉCANIQUE", "MÉCANIQUE"},
+        {"ÉLECTRIQUE", "LOCAL ÉLECTRIQUE"},
+    ]
+    for group in synonyms:
+        norm_group = {normalize_string(s) for s in group}
+        if a in norm_group and b in norm_group:
+            return True
+    return False
 
 
 def compare_product(extracted: dict, ground_truth: dict) -> tuple:

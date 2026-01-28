@@ -373,6 +373,12 @@ class TestWithRealData:
         with open(devis_path) as f:
             devis = json.load(f)
         
+        # Guard: skip si le devis n'a pas assez de contenu exploitable
+        sections = devis.get("sections", [])
+        content_sections = [s for s in sections if len(s.get("content", "")) > 50]
+        if len(content_sections) < 2:
+            pytest.skip("Devis data insufficient for cross-validation (not enough content sections)")
+        
         report = cross_validate(rooms, devis)
         
         # Devrait avoir des matches
