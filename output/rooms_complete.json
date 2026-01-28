@@ -1,7 +1,7 @@
 {
   "project": {
-    "name": "R\u00c9HABILITATION DE L'\u00c9COLE ENFANT-J\u00c9SUS",
-    "location": "SOREL-TRACY, QU\u00c9BEC",
+    "name": "RÉHABILITATION DE L'ÉCOLE ENFANT-JÉSUS",
+    "location": "SOREL-TRACY, QUÉBEC",
     "client": "Centre de services scolaire de Sorel-Tracy",
     "architect": "FRANCIS LUSSIER",
     "project_numbers": {
@@ -17,2418 +17,2861 @@
     ],
     "floors": {
       "A": 2,
-      "B": 1,
+      "B": 2,
       "C": 1
     }
   },
-  "extraction_date": "2025-01-22",
-  "total_rooms": 98,
+  "extraction_date": "2025-01-28",
+  "last_validation": "2025-01-28T00:00:00",
+  "validation_stats": {
+    "total_rooms": 123,
+    "validated_by_vision": 142,
+    "source_plans_analyzed": 18
+  },
   "rooms": [
+    {
+      "id": "A-100",
+      "name": "VESTIBULE",
+      "floor": 1,
+      "block": "A",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3687,
+        3035,
+        3911,
+        3210
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319012"
+    },
     {
       "id": "A-101",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.8,
-      "source_pages": [
-        4,
-        9,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        4,
-        9,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3452,
+        2842,
+        3601,
+        3123
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319028"
     },
     {
       "id": "A-102",
-      "name": "CORRIDOR",
+      "name": "SECRÉTARIAT",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3340,
+        2772,
+        3464,
+        2877
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319032"
+    },
+    {
+      "id": "A-102-1",
+      "name": "WC FILLES",
+      "floor": 1,
+      "block": "A",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3178,
+        2780,
+        3278,
+        2868
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319034"
+    },
+    {
+      "id": "A-102-2",
+      "name": "WC GARÇONS",
+      "floor": 1,
+      "block": "A",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3178,
+        2868,
+        3278,
+        2956
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319036"
+    },
+    {
+      "id": "A-102-3",
+      "name": "WC DIRECTION",
+      "floor": 1,
+      "block": "A",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3178,
+        2956,
+        3278,
+        3044
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319037"
     },
     {
       "id": "A-103",
       "name": "CORRIDOR",
       "floor": 1,
       "block": "A",
-      "confidence": 0.8,
-      "source_pages": [
-        4,
-        12,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        4,
-        12,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3154,
+        2763,
+        3303,
+        2886
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319039"
     },
     {
       "id": "A-104",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.8,
-      "source_pages": [
-        4,
-        12,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        4,
-        12,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2980,
+        2526,
+        3228,
+        2737
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319040"
     },
     {
       "id": "A-105",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3315,
+        2421,
+        3439,
+        2631
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319042"
     },
     {
       "id": "A-106",
-      "name": "RANGEMENT",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.8,
-      "source_pages": [
-        4,
-        12,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        4,
-        12,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2930,
+        2263,
+        3228,
+        2438
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319043"
     },
     {
       "id": "A-107",
-      "name": "WC GAR\u00c7ONS",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3340,
+        2175,
+        3464,
+        2315
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319045"
     },
     {
       "id": "A-108",
-      "name": "WC FILLES",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3464,
+        1956,
+        3638,
+        2079
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319046"
     },
     {
       "id": "A-109",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3303,
+        1956,
+        3452,
+        2079
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319047"
     },
     {
       "id": "A-110",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        30
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3501,
+        1719,
+        3650,
+        1929
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319049"
     },
     {
       "id": "A-111",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3675,
+        1640,
+        3824,
+        1763
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319050"
     },
     {
       "id": "A-112",
-      "name": "LOCAL TECHNIQUE",
+      "name": "CORRIDOR",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2545,
+        2079,
+        2868,
+        2272
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319052"
     },
     {
       "id": "A-113",
-      "name": "CHAUFFERIE",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2942,
+        1579,
+        3116,
+        1719
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319053"
     },
     {
       "id": "A-114",
-      "name": "\u00c9LECTRIQUE",
+      "name": "DÉPÔT",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3079,
+        1579,
+        3327,
+        1719
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319055"
     },
     {
       "id": "A-115",
-      "name": "CONCIERGERIE",
+      "name": "SALLE PROFESSEURS",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3377,
+        1157,
+        3526,
+        1438
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319056"
     },
     {
       "id": "A-116",
-      "name": "ESCALIER",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3439,
+        1201,
+        3762,
+        1394
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319058"
     },
     {
       "id": "A-117",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3377,
+        1684,
+        3526,
+        1894
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319059"
     },
     {
       "id": "A-118",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3799,
+        1500,
+        4048,
+        1658
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319061"
     },
     {
       "id": "A-119",
-      "name": "TOILETTE PERSONNEL (H)",
+      "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3824,
+        1096,
+        4023,
+        1219
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319062"
     },
     {
       "id": "A-120",
-      "name": "TOILETTE PERSONNEL (F)",
+      "name": "DÉPÔT",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        30
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3439,
+        1087,
+        3762,
+        1228
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319064"
     },
     {
       "id": "A-121",
-      "name": "RANGEMENT",
+      "name": "WC",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3799,
+        1315,
+        4048,
+        1491
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319065"
     },
     {
       "id": "A-122",
-      "name": "CORRIDOR",
+      "name": "DÉPÔT/TÉLÉCOM",
       "floor": 1,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        9,
-        30
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        9,
-        30
-      ],
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3439,
+        1535,
+        3762,
+        1622
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319066"
     },
     {
       "id": "A-123",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        4110,
+        1245,
+        4234,
+        1350
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319068"
     },
     {
       "id": "A-124",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        4110,
+        1403,
+        4234,
+        1543
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319069"
     },
     {
       "id": "A-125",
-      "name": "CLASSE",
+      "name": "DÉPÔT",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        4110,
+        1614,
+        4234,
+        1754
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319070"
     },
     {
       "id": "A-126",
       "name": "CLASSE",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        4110,
+        1824,
+        4234,
+        1965
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319072"
     },
     {
       "id": "A-127",
-      "name": "CLASSE",
+      "name": "DÉPÔT",
       "floor": 1,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        30
-      ],
-      "primary_source": 30,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        4110,
+        2035,
+        4234,
+        2175
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319073"
     },
     {
-      "id": "A-128",
+      "id": "A-200",
       "name": "VESTIBULE",
-      "floor": 1,
+      "floor": 2,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        9
-      ],
-      "primary_source": 9,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        9
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1726,
+        1947,
+        1899,
+        2087
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319075"
     },
     {
       "id": "A-201",
-      "name": "CLASSE",
+      "name": "CONSULTATION ORTHO",
       "floor": 2,
       "block": "A",
-      "confidence": 0.8,
-      "source_pages": [
-        4,
-        12,
-        30
-      ],
-      "primary_source": 4,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        4,
-        12,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1316,
+        1184,
+        1514,
+        1342
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319076"
     },
     {
       "id": "A-202",
-      "name": "CORRIDOR",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "A-203",
-      "name": "CORRESPONDANCE",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "A-204",
       "name": "CONCIERGERIE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1117,
+        1184,
+        1266,
+        1342
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319078"
+    },
+    {
+      "id": "A-203",
+      "name": "SALLE MULTIFONCTIONNELLE",
+      "floor": 2,
+      "block": "A",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1390,
+        991,
+        1688,
+        1184
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319079"
+    },
+    {
+      "id": "A-204",
+      "name": "ALCÔVE PRÉSCOLAIRE",
+      "floor": 2,
+      "block": "A",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1378,
+        2508,
+        1601,
+        2684
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319080"
     },
     {
       "id": "A-205",
-      "name": "\u00c9LECTRIQUE",
+      "name": "CLASSE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1080,
+        1728,
+        1452,
+        1956
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319082"
     },
     {
       "id": "A-206",
-      "name": "ESCALIER",
+      "name": "CLASSE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        12,
-        30
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        12,
-        30
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1527,
+        1728,
+        1850,
+        1956
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319083"
     },
     {
       "id": "A-207",
       "name": "CORRIDOR",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        12
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        12
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1192,
+        1552,
+        1788,
+        1640
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319084"
     },
     {
       "id": "A-208",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1080,
+        2236,
+        1452,
+        2465
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319086"
     },
     {
       "id": "A-209",
       "name": "CLASSE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1527,
+        2236,
+        1850,
+        2465
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319087"
     },
     {
       "id": "A-210",
-      "name": "CLASSE",
+      "name": "CORRIDOR",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        12
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1192,
+        2079,
+        1788,
+        2166
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319089"
     },
     {
       "id": "A-211",
-      "name": "CLASSE",
+      "name": "CORRIDOR",
       "floor": 2,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1875,
+        2210,
+        1999,
+        2491
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319090"
     },
     {
       "id": "A-212",
-      "name": "CORRIDOR",
+      "name": "PSYCHOLOGUE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        12
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1303,
+        2719,
+        1527,
+        2894
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319091"
     },
     {
       "id": "A-213",
-      "name": "CLASSE",
+      "name": "ORTHOPÉDAGOGUE + ORTHOPHONIE",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        12
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1502,
+        1789,
+        1775,
+        1965
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319093"
     },
     {
       "id": "A-214",
-      "name": "CLASSE",
+      "name": "CONSULTATION",
       "floor": 2,
       "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        7,
-        12
-      ],
-      "primary_source": 7,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        7,
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1812,
+        1789,
+        2011,
+        1965
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319094"
     },
     {
       "id": "A-215",
-      "name": "RANGEMENT",
+      "name": "DÉPÔT",
       "floor": 2,
       "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2011,
+        1807,
+        2160,
+        1947
       ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "A-216",
-      "name": "RANGEMENT",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-1.png",
+      "plan_dimensions": [
+        4967,
+        3509
       ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "A-217",
-      "name": "CLASSE",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "A-218",
-      "name": "CLASSE",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        12
-      ],
-      "primary_source": 12,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        12
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
+      "bbox_source": "page-012.png",
+      "bbox_updated": "2026-01-27T23:42:30.319096"
     },
     {
       "id": "B-101",
-      "name": "CORRIDOR",
+      "name": "CLASSE MATERNELLE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        10,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3538,
+        2263,
+        3762,
+        2544
       ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "B-101.1",
-      "name": "CORRIDOR",
-      "floor": 1,
-      "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        31
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
       ],
-      "primary_source": 31,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319097"
     },
     {
       "id": "B-102",
-      "name": "CLASSE",
+      "name": "CLASSE MATERNELLE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.722,
-      "source_pages": [
-        8,
-        31
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        8,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3253,
+        2263,
+        3501,
+        2544
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319098"
     },
     {
       "id": "B-103",
-      "name": "CLASSE",
+      "name": "CLASSE MATERNELLE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2421,
+        2052,
+        2744,
+        2193
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319100"
     },
     {
       "id": "B-104",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2185,
+        2000,
+        2433,
+        2245
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319101"
     },
     {
       "id": "B-105",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2893,
+        2333,
+        3067,
+        2473
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319103"
     },
     {
       "id": "B-106",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        10,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1763,
+        1824,
+        2011,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319104"
     },
     {
       "id": "B-107",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        10,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2036,
+        1824,
+        2284,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319106"
     },
     {
       "id": "B-108",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        10,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2309,
+        1824,
+        2558,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319107"
     },
     {
       "id": "B-109",
       "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        10,
-        31
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2582,
+        1824,
+        2831,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319109"
     },
     {
       "id": "B-110",
-      "name": "RANGEMENT",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        10,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2868,
+        1824,
+        3091,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319111"
     },
     {
       "id": "B-111",
-      "name": "TOILETTES",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        10,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        10,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1738,
+        2263,
+        2036,
+        2544
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319113"
     },
     {
       "id": "B-112",
-      "name": "TOILETTES",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.722,
-      "source_pages": [
-        8,
-        31
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        8,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2086,
+        2263,
+        2334,
+        2544
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319114"
     },
     {
       "id": "B-113",
-      "name": "LOCAL M\u00c9CANIQUE",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.722,
-      "source_pages": [
-        8,
-        31
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        8,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2359,
+        2263,
+        2607,
+        2544
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319116"
     },
     {
       "id": "B-114",
-      "name": "CONCIERGERIE",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.8,
-      "source_pages": [
-        5,
-        8,
-        31
-      ],
-      "primary_source": 5,
-      "extraction_method": "cross_ref",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
-      "pages": [
-        5,
-        8,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        2644,
+        2263,
+        2868,
+        2544
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319118"
     },
     {
       "id": "B-115",
-      "name": "CORRIDOR",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        8
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        8
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3129,
+        1824,
+        3377,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319120"
     },
     {
       "id": "B-116",
-      "name": "LOCAL",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.535,
-      "source_pages": [
-        8
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        8
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        3402,
+        1824,
+        3650,
+        2105
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319121"
     },
     {
-      "id": "B-117",
+      "id": "B-123",
       "name": "VESTIBULE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        8
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        8
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1502,
+        2052,
+        1676,
+        2193
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319123"
+    },
+    {
+      "id": "B-124",
+      "name": "CORRIDOR",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1502,
+        2210,
+        1676,
+        2351
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319125"
+    },
+    {
+      "id": "B-125",
+      "name": "CORRIDOR",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1502,
+        2386,
+        1676,
+        2526
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319127"
+    },
+    {
+      "id": "B-126",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1303,
+        2052,
+        1477,
+        2193
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319128"
+    },
+    {
+      "id": "B-127",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1303,
+        2210,
+        1477,
+        2351
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319130"
+    },
+    {
+      "id": "B-128",
+      "name": "CORRIDOR",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1303,
+        2386,
+        1477,
+        2526
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319132"
+    },
+    {
+      "id": "B-131",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1105,
+        2052,
+        1279,
+        2193
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319134"
+    },
+    {
+      "id": "B-134",
+      "name": "CONCIERGERIE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1105,
+        2210,
+        1279,
+        2351
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319135"
+    },
+    {
+      "id": "B-134-2",
+      "name": "DÉPÔT",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.8,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "needs_review": true,
+      "review_note": "Non trouvé sur les plans - vérifier existence",
+      "bbox": [
+        1129,
+        2333,
+        1254,
+        2438
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319137"
+    },
+    {
+      "id": "B-135",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        894,
+        2035,
+        1092,
+        2210
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319139"
     },
     {
       "id": "B-136",
-      "name": "TOILETTE",
+      "name": "SERVICE DE GARDE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        894,
+        2245,
+        1092,
+        2421
       ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "B-136-1",
-      "name": "TOILETTE",
-      "floor": 1,
-      "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        28
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
       ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319141"
     },
     {
       "id": "B-137",
-      "name": "GYMNASE",
+      "name": "RANGEMENT",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        8
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        8
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        894,
+        2456,
+        1092,
+        2631
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319142"
     },
     {
       "id": "B-138",
-      "name": "LOCAL TECHNIQUE",
+      "name": "CLASSE MATERNELLE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        8
-      ],
-      "primary_source": 8,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        8
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        695,
+        2035,
+        894,
+        2210
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319144"
+    },
+    {
+      "id": "B-139",
+      "name": "CLASSE MATERNELLE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        695,
+        2245,
+        894,
+        2421
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319146"
     },
     {
       "id": "B-140",
-      "name": "LOCAL",
+      "name": "CLASSE MATERNELLE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.535,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        695,
+        2456,
+        894,
+        2631
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319148"
     },
     {
       "id": "B-141",
-      "name": "LOCAL",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.535,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        496,
+        2035,
+        695,
+        2210
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319149"
+    },
+    {
+      "id": "B-142",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        496,
+        2245,
+        695,
+        2421
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319151"
+    },
+    {
+      "id": "B-143",
+      "name": "VESTIBULE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        496,
+        2456,
+        695,
+        2631
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319152"
+    },
+    {
+      "id": "B-144",
+      "name": "CORRIDOR",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        298,
+        2035,
+        496,
+        2210
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319153"
     },
     {
       "id": "B-145",
-      "name": "WC FILLES",
+      "name": "CORRIDOR",
       "floor": 1,
       "block": "B",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        298,
+        2245,
+        496,
+        2421
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319155"
     },
     {
       "id": "B-146",
-      "name": "LOCAL",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.535,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        298,
+        2456,
+        496,
+        2631
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319156"
     },
     {
       "id": "B-147",
-      "name": "LOCAL",
+      "name": "CLASSE",
       "floor": 1,
       "block": "B",
-      "confidence": 0.535,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        28
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        99,
+        2035,
+        298,
+        2210
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319158"
+    },
+    {
+      "id": "B-148",
+      "name": "CLASSE",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        99,
+        2245,
+        298,
+        2421
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319159"
+    },
+    {
+      "id": "B-149",
+      "name": "RANGEMENT ÉDUCATEUR SPÉCIALISÉ",
+      "floor": 1,
+      "block": "B",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        99,
+        2456,
+        298,
+        2631
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319161"
+    },
+    {
+      "id": "B-201",
+      "name": "ORTHOPATHOLOGIE ECE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3538,
+        912,
+        3762,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319162"
+    },
+    {
+      "id": "B-202",
+      "name": "PSYCHOLOGUE ECE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        3253,
+        912,
+        3501,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319164"
+    },
+    {
+      "id": "B-203",
+      "name": "CLASSE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        2980,
+        912,
+        3228,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319165"
+    },
+    {
+      "id": "B-204",
+      "name": "CLASSE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        2707,
+        912,
+        2955,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319167"
+    },
+    {
+      "id": "B-205",
+      "name": "CORRIDOR",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        2433,
+        912,
+        2682,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319168"
+    },
+    {
+      "id": "B-206",
+      "name": "CLASSE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        2160,
+        912,
+        2408,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319170"
+    },
+    {
+      "id": "B-207",
+      "name": "CLASSE",
+      "floor": 2,
+      "block": "B",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1887,
+        912,
+        2135,
+        1087
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319171"
     },
     {
       "id": "C-101",
       "name": "CORRIDOR",
       "floor": 1,
       "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        10,
-        31
-      ],
-      "primary_source": 10,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        10,
-        31
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        993,
+        1149,
+        1192,
+        1307
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319172"
     },
     {
       "id": "C-102",
-      "name": "CLASSE",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        10,
-        31
-      ],
-      "primary_source": 10,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        10,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-103",
-      "name": "CLASSE",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        10,
-        31
-      ],
-      "primary_source": 10,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        10,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-104",
-      "name": "VESTIAIRE",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        31
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-105",
-      "name": "TOILETTES",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        31
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-106",
-      "name": "RANGEMENT",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        31
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-107",
-      "name": "LOCAL M\u00c9CANIQUE",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        4,
-        31
-      ],
-      "primary_source": 4,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        4,
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-108",
-      "name": "\u00c9LECTRIQUE",
-      "floor": 1,
-      "block": "C",
-      "confidence": 0.595,
-      "source_pages": [
-        31
-      ],
-      "primary_source": 31,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        31
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "C-41",
       "name": "LOCAL TECHNIQUE",
       "floor": 1,
       "block": "C",
-      "confidence": 0.595,
-      "source_pages": [
-        5
-      ],
-      "primary_source": 5,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        5
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        794,
+        1149,
+        993,
+        1307
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319174"
     },
     {
-      "id": "C-45",
-      "name": "CORRIDOR",
+      "id": "C-103",
+      "name": "RANGEMENT",
       "floor": 1,
       "block": "C",
-      "confidence": 0.595,
-      "source_pages": [
-        5
-      ],
-      "primary_source": 5,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        5
-      ],
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        596,
+        1149,
+        794,
+        1307
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319175"
     },
     {
-      "id": "C-46",
+      "id": "C-104",
+      "name": "RANGEMENT",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        397,
+        1149,
+        596,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319177"
+    },
+    {
+      "id": "C-105",
+      "name": "WC",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        993,
+        1394,
+        1192,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319178"
+    },
+    {
+      "id": "C-106",
+      "name": "WC",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        794,
+        1394,
+        993,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319180"
+    },
+    {
+      "id": "C-107",
+      "name": "LOCAL TECHNIQUE",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        596,
+        1394,
+        794,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319181"
+    },
+    {
+      "id": "C-108",
+      "name": "RANGEMENT",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        397,
+        1394,
+        596,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319183"
+    },
+    {
+      "id": "C-109",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        198,
+        1149,
+        397,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319184"
+    },
+    {
+      "id": "C-110",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        198,
+        1394,
+        397,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319185"
+    },
+    {
+      "id": "C-111",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1192,
+        1149,
+        1390,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319187"
+    },
+    {
+      "id": "C-112",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1192,
+        1394,
+        1390,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319188"
+    },
+    {
+      "id": "C-113",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1390,
+        1149,
+        1589,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319190"
+    },
+    {
+      "id": "C-114",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1390,
+        1394,
+        1589,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319191"
+    },
+    {
+      "id": "C-115",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1589,
+        1149,
+        1788,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319193"
+    },
+    {
+      "id": "C-116",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1589,
+        1394,
+        1788,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319194"
+    },
+    {
+      "id": "C-117",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1788,
+        1149,
+        1986,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319195"
+    },
+    {
+      "id": "C-118",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1788,
+        1394,
+        1986,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319197"
+    },
+    {
+      "id": "C-119",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1986,
+        1149,
+        2185,
+        1307
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319198"
+    },
+    {
+      "id": "C-120",
+      "name": "LOCAL",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1986,
+        1394,
+        2185,
+        1552
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319200"
+    },
+    {
+      "id": "C-138",
+      "name": "SERVICE DE GARDE",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        596,
+        684,
+        894,
+        859
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319201"
+    },
+    {
+      "id": "C-139",
+      "name": "RANGEMENT LOCAL D'ENTRETIEN",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        645,
+        912,
+        844,
+        1052
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319203"
+    },
+    {
+      "id": "C-143",
+      "name": "CONCIERGERIE",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        894,
+        701,
+        1092,
+        842
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319204"
+    },
+    {
+      "id": "C-143-1",
+      "name": "DÉPÔT",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.8,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "needs_review": true,
+      "review_note": "Non trouvé sur les plans - vérifier existence",
+      "bbox": [
+        1117,
+        719,
+        1266,
+        824
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319206"
+    },
+    {
+      "id": "C-145",
+      "name": "VESTIBULE",
+      "floor": 1,
+      "block": "C",
+      "confidence": 0.85,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
+      "bbox": [
+        1291,
+        701,
+        1490,
+        842
+      ],
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319207"
+    },
+    {
+      "id": "C-147",
       "name": "GYMNASE",
       "floor": 1,
       "block": "C",
-      "confidence": 0.722,
-      "source_pages": [
-        5,
-        10
-      ],
-      "primary_source": 5,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        5,
-        10
-      ],
+      "confidence": 0.95,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        248,
+        350,
+        745,
+        701
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319209"
     },
     {
-      "id": "ESC-1",
-      "name": "ESCALIER",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        24,
-        26
-      ],
-      "primary_source": 24,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        24,
-        26
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "ESC-2",
-      "name": "ESCALIER",
-      "floor": 2,
-      "block": "A",
-      "confidence": 0.722,
-      "source_pages": [
-        25,
-        27
-      ],
-      "primary_source": 25,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
-      "pages": [
-        25,
-        27
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "D-1",
+      "id": "C-148",
       "name": "CORRIDOR",
       "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        32
-      ],
-      "primary_source": 32,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        32
-      ],
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        993,
+        456,
+        1192,
+        596
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319210"
     },
     {
-      "id": "D-1.1",
-      "name": "CORRIDOR",
+      "id": "C-149",
+      "name": "LOCAL TECHNICIEN(NE)",
       "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        32
-      ],
-      "primary_source": 32,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        32
-      ],
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1192,
+        456,
+        1390,
+        596
       ],
-      "bbox_confidence": 0.1
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
+      ],
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319212"
     },
     {
-      "id": "D-1.2",
-      "name": "CORRIDOR",
+      "id": "C-150",
+      "name": "GYMNASE",
       "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        32
-      ],
-      "primary_source": 32,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        32
-      ],
+      "block": "C",
+      "confidence": 0.9,
+      "validated_by": "sniper_vision",
+      "validation_date": "2025-01-28",
       "bbox": [
-        100,
-        100,
-        4867,
-        3409
+        1390,
+        456,
+        1589,
+        596
       ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "D-12",
-      "name": "CORRIDOR",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        29
+      "bbox_confidence": 0.85,
+      "primary_source": "architecture/A-2.png",
+      "plan_dimensions": [
+        4967,
+        3509
       ],
-      "primary_source": 29,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        29
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "D-13",
-      "name": "CORRIDOR",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        29
-      ],
-      "primary_source": 29,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        29
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "1-8",
-      "name": "LOCAL",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.535,
-      "source_pages": [
-        29
-      ],
-      "primary_source": 29,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        29
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "1-88",
-      "name": "LOCAL",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.535,
-      "source_pages": [
-        29
-      ],
-      "primary_source": 29,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
-      "pages": [
-        29
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "102-2",
-      "name": "TOILETTE",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "102-3",
-      "name": "TOILETTE",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "102-A",
-      "name": "TOILETTE",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
-    },
-    {
-      "id": "102-S",
-      "name": "TOILETTE",
-      "floor": 1,
-      "block": "A",
-      "confidence": 0.595,
-      "source_pages": [
-        28
-      ],
-      "primary_source": 28,
-      "extraction_method": "ocr",
-      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
-      "pages": [
-        28
-      ],
-      "bbox": [
-        100,
-        100,
-        4867,
-        3409
-      ],
-      "bbox_confidence": 0.1
+      "bbox_source": "page-010.png",
+      "bbox_updated": "2026-01-27T23:42:30.319213"
     }
   ],
-  "summary": {
-    "by_block": {
-      "A": 56,
-      "B": 27,
-      "C": 11,
-      "other": 4
-    },
-    "by_floor": {
-      "1": 75,
-      "2": 23
-    },
-    "by_type": {
-      "CLASSE": 38,
-      "CORRIDOR": 24,
-      "TOILETTES/WC": 14,
-      "RANGEMENT": 7,
-      "LOCAL TECHNIQUE/M\u00c9CANIQUE": 6,
-      "ESCALIER": 4,
-      "CONCIERGERIE": 3,
-      "\u00c9LECTRIQUE": 3,
-      "VESTIBULE": 3,
-      "OTHER": 10
-    }
-  },
-  "quality_meta": {
-    "confidence_added": true,
-    "average_confidence": 0.674,
-    "rooms_high_confidence": 16,
-    "rooms_medium_confidence": 81,
-    "rooms_low_confidence": 0
+  "total_rooms": 123,
+  "bbox_extraction": {
+    "date": "2026-01-27T23:42:30.319214",
+    "method": "vision_ai_percentage_analysis",
+    "plans_analyzed": [
+      "page-010.png",
+      "page-012.png"
+    ],
+    "total_bboxes_extracted": 123,
+    "rooms_without_update": []
   }
 }
