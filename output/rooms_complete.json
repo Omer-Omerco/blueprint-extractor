@@ -1,7 +1,7 @@
 {
   "project": {
-    "name": "RÉHABILITATION DE L'ÉCOLE ENFANT-JÉSUS",
-    "location": "SOREL-TRACY, QUÉBEC",
+    "name": "R\u00c9HABILITATION DE L'\u00c9COLE ENFANT-J\u00c9SUS",
+    "location": "SOREL-TRACY, QU\u00c9BEC",
     "client": "Centre de services scolaire de Sorel-Tracy",
     "architect": "FRANCIS LUSSIER",
     "project_numbers": {
@@ -37,12 +37,19 @@
       ],
       "primary_source": 4,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         4,
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-102",
@@ -56,11 +63,18 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-103",
@@ -75,12 +89,19 @@
       ],
       "primary_source": 4,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         4,
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-104",
@@ -95,12 +116,19 @@
       ],
       "primary_source": 4,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         4,
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-105",
@@ -114,11 +142,18 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-106",
@@ -133,16 +168,23 @@
       ],
       "primary_source": 4,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         4,
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-107",
-      "name": "WC GARÇONS",
+      "name": "WC GAR\u00c7ONS",
       "floor": 1,
       "block": "A",
       "confidence": 0.595,
@@ -151,10 +193,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-108",
@@ -168,11 +217,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-109",
@@ -186,11 +242,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-110",
@@ -204,11 +267,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-111",
@@ -222,11 +292,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-112",
@@ -240,11 +317,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-113",
@@ -258,15 +342,22 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-114",
-      "name": "ÉLECTRIQUE",
+      "name": "\u00c9LECTRIQUE",
       "floor": 1,
       "block": "A",
       "confidence": 0.722,
@@ -276,11 +367,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-115",
@@ -294,11 +392,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-116",
@@ -311,10 +416,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-117",
@@ -328,11 +440,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-118",
@@ -346,11 +465,18 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-119",
@@ -363,10 +489,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-120",
@@ -380,11 +513,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-121",
@@ -398,11 +538,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-122",
@@ -416,11 +563,18 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         9,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-123",
@@ -433,10 +587,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-124",
@@ -449,10 +610,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-125",
@@ -465,10 +633,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-126",
@@ -481,10 +656,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-127",
@@ -497,10 +679,17 @@
       ],
       "primary_source": 30,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-128",
@@ -513,10 +702,17 @@
       ],
       "primary_source": 9,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         9
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-201",
@@ -531,12 +727,19 @@
       ],
       "primary_source": 4,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         4,
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-202",
@@ -550,11 +753,18 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-203",
@@ -568,11 +778,18 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-204",
@@ -586,15 +803,22 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-205",
-      "name": "ÉLECTRIQUE",
+      "name": "\u00c9LECTRIQUE",
       "floor": 2,
       "block": "A",
       "confidence": 0.722,
@@ -604,11 +828,18 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-206",
@@ -622,11 +853,18 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         12,
         30
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-207",
@@ -640,11 +878,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-208",
@@ -657,10 +902,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-209",
@@ -673,10 +925,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-210",
@@ -690,11 +949,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-211",
@@ -707,10 +973,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-212",
@@ -724,11 +997,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-213",
@@ -742,11 +1022,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-214",
@@ -760,11 +1047,18 @@
       ],
       "primary_source": 7,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         7,
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-215",
@@ -777,10 +1071,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-216",
@@ -793,10 +1094,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-217",
@@ -809,10 +1117,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "A-218",
@@ -825,10 +1140,17 @@
       ],
       "primary_source": 12,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         12
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-101",
@@ -843,12 +1165,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-101.1",
@@ -861,10 +1190,17 @@
       ],
       "primary_source": 31,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-102",
@@ -878,11 +1214,18 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-103",
@@ -897,12 +1240,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-104",
@@ -917,12 +1267,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-105",
@@ -937,12 +1294,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-106",
@@ -958,13 +1322,20 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-107",
@@ -980,13 +1351,20 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-108",
@@ -1001,12 +1379,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-109",
@@ -1021,12 +1406,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-110",
@@ -1041,12 +1433,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-111",
@@ -1061,12 +1460,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-112",
@@ -1080,15 +1486,22 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-113",
-      "name": "LOCAL MÉCANIQUE",
+      "name": "LOCAL M\u00c9CANIQUE",
       "floor": 1,
       "block": "B",
       "confidence": 0.722,
@@ -1098,11 +1511,18 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-114",
@@ -1117,12 +1537,19 @@
       ],
       "primary_source": 5,
       "extraction_method": "cross_ref",
-      "extraction_notes": "Méthode inférée: cross-référence multi-sources | Multiples sources - haute fiabilité",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: cross-r\u00e9f\u00e9rence multi-sources | Multiples sources - haute fiabilit\u00e9",
       "pages": [
         5,
         8,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-115",
@@ -1135,10 +1562,17 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         8
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-116",
@@ -1151,10 +1585,17 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         8
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-117",
@@ -1167,10 +1608,17 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         8
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-136",
@@ -1183,10 +1631,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-136-1",
@@ -1199,10 +1654,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-137",
@@ -1215,10 +1677,17 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         8
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-138",
@@ -1231,10 +1700,17 @@
       ],
       "primary_source": 8,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         8
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-140",
@@ -1247,10 +1723,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-141",
@@ -1263,10 +1746,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-145",
@@ -1279,10 +1769,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-146",
@@ -1295,10 +1792,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "B-147",
@@ -1311,10 +1815,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-101",
@@ -1328,11 +1839,18 @@
       ],
       "primary_source": 10,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-102",
@@ -1346,11 +1864,18 @@
       ],
       "primary_source": 10,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-103",
@@ -1364,11 +1889,18 @@
       ],
       "primary_source": 10,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         10,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-104",
@@ -1382,11 +1914,18 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-105",
@@ -1400,11 +1939,18 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-106",
@@ -1418,15 +1964,22 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-107",
-      "name": "LOCAL MÉCANIQUE",
+      "name": "LOCAL M\u00c9CANIQUE",
       "floor": 1,
       "block": "C",
       "confidence": 0.722,
@@ -1436,15 +1989,22 @@
       ],
       "primary_source": 4,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         4,
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-108",
-      "name": "ÉLECTRIQUE",
+      "name": "\u00c9LECTRIQUE",
       "floor": 1,
       "block": "C",
       "confidence": 0.595,
@@ -1453,10 +2013,17 @@
       ],
       "primary_source": 31,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         31
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-41",
@@ -1469,10 +2036,17 @@
       ],
       "primary_source": 5,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         5
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-45",
@@ -1485,10 +2059,17 @@
       ],
       "primary_source": 5,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         5
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "C-46",
@@ -1502,11 +2083,18 @@
       ],
       "primary_source": 5,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         5,
         10
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "ESC-1",
@@ -1520,11 +2108,18 @@
       ],
       "primary_source": 24,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         24,
         26
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "ESC-2",
@@ -1538,11 +2133,18 @@
       ],
       "primary_source": 25,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe",
       "pages": [
         25,
         27
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "D-1",
@@ -1555,10 +2157,17 @@
       ],
       "primary_source": 32,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         32
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "D-1.1",
@@ -1571,10 +2180,17 @@
       ],
       "primary_source": 32,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         32
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "D-1.2",
@@ -1587,10 +2203,17 @@
       ],
       "primary_source": 32,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         32
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "D-12",
@@ -1603,10 +2226,17 @@
       ],
       "primary_source": 29,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         29
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "D-13",
@@ -1619,10 +2249,17 @@
       ],
       "primary_source": 29,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         29
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "1-8",
@@ -1635,10 +2272,17 @@
       ],
       "primary_source": 29,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         29
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "1-88",
@@ -1651,10 +2295,17 @@
       ],
       "primary_source": 29,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée | Nom générique ou manquant",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e | Nom g\u00e9n\u00e9rique ou manquant",
       "pages": [
         29
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "102-2",
@@ -1667,10 +2318,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "102-3",
@@ -1683,10 +2341,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "102-A",
@@ -1699,10 +2364,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     },
     {
       "id": "102-S",
@@ -1715,10 +2387,17 @@
       ],
       "primary_source": 28,
       "extraction_method": "ocr",
-      "extraction_notes": "Méthode inférée: OCR directe | Source unique - validation recommandée",
+      "extraction_notes": "M\u00e9thode inf\u00e9r\u00e9e: OCR directe | Source unique - validation recommand\u00e9e",
       "pages": [
         28
-      ]
+      ],
+      "bbox": [
+        100,
+        100,
+        4867,
+        3409
+      ],
+      "bbox_confidence": 0.1
     }
   ],
   "summary": {
@@ -1737,10 +2416,10 @@
       "CORRIDOR": 24,
       "TOILETTES/WC": 14,
       "RANGEMENT": 7,
-      "LOCAL TECHNIQUE/MÉCANIQUE": 6,
+      "LOCAL TECHNIQUE/M\u00c9CANIQUE": 6,
       "ESCALIER": 4,
       "CONCIERGERIE": 3,
-      "ÉLECTRIQUE": 3,
+      "\u00c9LECTRIQUE": 3,
       "VESTIBULE": 3,
       "OTHER": 10
     }

@@ -1,0 +1,13 @@
+# Blueprint Extractor Dependencies
+# Core
+pymupdf>=1.23.0        # PDF extraction (fitz)
+Pillow>=9.0.0          # Image manipulation
+
+# OCR (optional - for bbox extraction)
+pytesseract>=0.3.10    # OCR wrapper
+
+# Analysis
+numpy>=1.24.0          # Numerical operations
+
+# RAG
+chromadb>=0.4.0        # Vector store (optional)
