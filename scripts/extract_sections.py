@@ -2,6 +2,8 @@
 """
 Section extractor for construction specifications (devis).
 Detects sections by analyzing font patterns and formatting changes.
+
+IMPROVED: Full content extraction for CSI sections.
 """
 
 import re
@@ -33,6 +35,32 @@ class FontStats:
             (font, size) for (font, size), count in self.fonts.items()
             if size > dominant_size
         ]
+
+
+@dataclass
+class CSISectionFull:
+    """A complete CSI section with full text content for RAG."""
+    code: str
+    division: str
+    title: str
+    start_page: int
+    end_page: int
+    full_text: str
+    products: list = field(default_factory=list)
+    locals_mentioned: list = field(default_factory=list)
+    
+    def to_dict(self) -> dict:
+        return {
+            "code": self.code,
+            "division": self.division,
+            "title": self.title,
+            "start_page": self.start_page,
+            "end_page": self.end_page,
+            "full_text": self.full_text,
+            "text_length": len(self.full_text),
+            "products": self.products,
+            "locals_mentioned": self.locals_mentioned
+        }
 
 
 @dataclass
@@ -188,34 +216,79 @@ class SectionExtractor:
         return sections
     
     def extract_csi_sections(self) -> list[dict]:
-        """Extract all CSI MasterFormat references."""
+        """Extract all CSI MasterFormat references with extended context."""
         csi_refs = []
+        
+        # Group blocks by page for better context extraction
+        blocks_by_page = {}
+        for block in self.blocks:
+            if block.page_num not in blocks_by_page:
+                blocks_by_page[block.page_num] = []
+            blocks_by_page[block.page_num].append(block)
         
         for block in self.blocks:
             text = block.text.strip()
             for match in self.CSI_PATTERN.finditer(text):
                 code = f"{match.group(1)} {match.group(2)} {match.group(3)}"
-                # Get context around the match
-                start = max(0, match.start() - 50)
-                end = min(len(text), match.end() + 100)
-                context = text[start:end].strip()
+                
+                # Get extended context: look for title before the code
+                context_parts = []
+                
+                # Check blocks before this one on same page
+                page_blocks = blocks_by_page.get(block.page_num, [])
+                sorted_blocks = sorted(page_blocks, key=lambda b: (b.y0, b.x0))
+                
+                # Find this block's position
+                block_idx = -1
+                for i, b in enumerate(sorted_blocks):
+                    if b.text == block.text and abs(b.y0 - block.y0) < 1:
+                        block_idx = i
+                        break
+                
+                # Get 3 blocks before for context (title usually above)
+                if block_idx > 0:
+                    for i in range(max(0, block_idx - 3), block_idx):
+                        prev_text = sorted_blocks[i].text.strip()
+                        if prev_text and len(prev_text) > 3:
+                            context_parts.append(prev_text)
+                
+                context_parts.append(text)
+                
+                # Get 2 blocks after for more context
+                for i in range(block_idx + 1, min(len(sorted_blocks), block_idx + 3)):
+                    next_text = sorted_blocks[i].text.strip()
+                    if next_text and len(next_text) > 3:
+                        context_parts.append(next_text)
+                
+                extended_context = ' | '.join(context_parts)
+                
+                # Try to extract title (usually ALL CAPS line before Section XX XX XX)
+                title = ""
+                for part in context_parts[:-1]:  # Exclude the CSI code line
+                    if part.isupper() and len(part) > 5 and not part.startswith('SECTION'):
+                        title = part
+                        break
                 
                 csi_refs.append({
                     "code": code,
                     "division": match.group(1),
-                    "context": context,
-                    "page_num": block.page_num
+                    "title": title,
+                    "context": extended_context[:500],
+                    "page_num": block.page_num,
+                    "is_header": self._is_title_block(block)
                 })
         
-        # Deduplicate by code while keeping first occurrence
-        seen = set()
-        unique_refs = []
+        # Deduplicate by code while keeping first occurrence with title
+        seen = {}
         for ref in csi_refs:
-            if ref["code"] not in seen:
-                seen.add(ref["code"])
-                unique_refs.append(ref)
+            code = ref["code"]
+            if code not in seen:
+                seen[code] = ref
+            elif ref.get("title") and not seen[code].get("title"):
+                # Prefer entry with title
+                seen[code] = ref
         
-        return unique_refs
+        return list(seen.values())
 
 
 def extract_local_references(blocks: list[TextBlock]) -> list[dict]:
