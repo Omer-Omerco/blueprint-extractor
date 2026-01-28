@@ -379,6 +379,29 @@ class DevisParser:
                 return False
             return True
         
+        def calculate_product_confidence(format_type: str, manufacturer: str, model: str) -> float:
+            """Calculate confidence score for product extraction."""
+            # Base confidence by extraction format
+            format_confidence = {
+                "pipe": 0.95,       # Quebec standard format - very reliable
+                "labeled": 0.90,   # Explicit labels - reliable
+                "de/of": 0.85,     # French pattern - good
+                "known_mfr": 0.80, # Known manufacturer match
+                "telle_que": 0.75, # Example format - less certain
+            }
+            base = format_confidence.get(format_type, 0.60)
+            
+            # Boost for known manufacturers
+            mfr_lower = manufacturer.lower()
+            if any(known in mfr_lower for known in KNOWN_MANUFACTURERS):
+                base = min(1.0, base + 0.05)
+            
+            # Reduce for very short model names
+            if len(model) < 5:
+                base -= 0.10
+            
+            return round(max(0.3, min(1.0, base)), 2)
+        
         # 1. Quebec pipe format: "Manufacturer | Product"
         # Must have at least 3 chars on each side
         pipe_pattern = re.compile(
@@ -402,10 +425,12 @@ class DevisParser:
                 key = (manufacturer.lower(), model.lower())
                 if key not in seen:
                     seen.add(key)
+                    confidence = calculate_product_confidence("pipe", manufacturer, model)
                     products.append({
                         "manufacturer": manufacturer,
                         "model": model,
-                        "format": "pipe"
+                        "format": "pipe",
+                        "confidence": confidence
                     })
         
         # 2. French format: "Product de Manufacturer" 
@@ -426,10 +451,12 @@ class DevisParser:
                     key = (manufacturer.lower(), product_name.lower())
                     if key not in seen:
                         seen.add(key)
+                        confidence = calculate_product_confidence("de/of", manufacturer, product_name)
                         products.append({
                             "manufacturer": manufacturer,
                             "model": product_name,
-                            "format": "de/of"
+                            "format": "de/of",
+                            "confidence": confidence
                         })
         
         # 3. Explicit label patterns: "Fabricant:", "Produit:", etc.
@@ -455,10 +482,12 @@ class DevisParser:
                 key = (manufacturer.lower(), model.lower())
                 if key not in seen:
                     seen.add(key)
+                    confidence = calculate_product_confidence("labeled", manufacturer, model)
                     products.append({
                         "manufacturer": manufacturer,
                         "model": model,
-                        "format": "labeled"
+                        "format": "labeled",
+                        "confidence": confidence
                     })
         
         # 4. Known manufacturer mentions: "Sherwin-Williams: ProMar 200"
@@ -483,10 +512,12 @@ class DevisParser:
                     key = (manufacturer.lower(), product.lower())
                     if key not in seen:
                         seen.add(key)
+                        confidence = calculate_product_confidence("known_mfr", manufacturer, product)
                         products.append({
                             "manufacturer": manufacturer.title(),
                             "model": product,
-                            "format": "known_mfr"
+                            "format": "known_mfr",
+                            "confidence": confidence
                         })
         
         # 5. Pattern "telle que X de Y" (common in Quebec specs)
@@ -505,10 +536,12 @@ class DevisParser:
                     key = (manufacturer.lower(), product.lower())
                     if key not in seen:
                         seen.add(key)
+                        confidence = calculate_product_confidence("telle_que", manufacturer, product)
                         products.append({
                             "manufacturer": manufacturer,
                             "model": product,
-                            "format": "telle_que"
+                            "format": "telle_que",
+                            "confidence": confidence
                         })
         
         return products
@@ -622,7 +655,9 @@ class DevisParser:
                     "model": product.get("model", ""),
                     "csi_section": section.code,
                     "csi_title": section.title,
-                    "format": product.get("format", "unknown")
+                    "format": product.get("format", "unknown"),
+                    "confidence": product.get("confidence", 0.5),
+                    "source_page": section.start_page
                 }
                 all_products.append(product_entry)
         

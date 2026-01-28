@@ -1,0 +1,292 @@
+{
+  "project": "École Enfants Jésus",
+  "project_full_name": "RÉHABILITATION DE L'ÉCOLE ENFANT-JÉSUS",
+  "location": "SOREL-TRACY, QUÉBEC",
+  "client": "Centre de services scolaire de Sorel-Tracy",
+  "project_numbers": {
+    "cssst": "23-333",
+    "architect": "24014"
+  },
+  "verification_date": "2025-01-27",
+  "verified_by": "Agent Validation",
+  "source_documents": {
+    "plans": "Plans architecture_35 pages.pdf",
+    "devis": "Devis architecture_365 pages.pdf"
+  },
+  "building_structure": {
+    "blocks": ["A", "B", "C"],
+    "floors": {
+      "A": [1, 2],
+      "B": [1],
+      "C": [1]
+    }
+  },
+  "verified_rooms": [
+    {
+      "id": "A-101",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Plan A-100 (page 4), Plan A-300 (page 30)",
+      "notes": "Classe standard bloc A, rez-de-chaussée"
+    },
+    {
+      "id": "A-102",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Plan A-100 (page 4), Plan A-300 (page 30)",
+      "notes": "Corridor principal bloc A"
+    },
+    {
+      "id": "A-107",
+      "name": "WC GARÇONS",
+      "block": "A",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Plan A-300 (page 30)",
+      "notes": "Toilettes garçons bloc A niveau 1"
+    },
+    {
+      "id": "A-108",
+      "name": "WC FILLES",
+      "block": "A",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Plan A-100 (page 9), Plan A-300 (page 30)",
+      "notes": "Toilettes filles bloc A niveau 1"
+    },
+    {
+      "id": "A-113",
+      "name": "CHAUFFERIE",
+      "block": "A",
+      "floor": 1,
+      "type": "TECHNIQUE",
+      "verified_from": "Plan A-100 (page 9), Plan A-300 (page 30)",
+      "notes": "Local technique mécanique"
+    },
+    {
+      "id": "A-114",
+      "name": "ÉLECTRIQUE",
+      "block": "A",
+      "floor": 1,
+      "type": "TECHNIQUE",
+      "verified_from": "Plan A-100 (page 9), Plan A-300 (page 30)",
+      "notes": "Local électrique principal"
+    },
+    {
+      "id": "A-115",
+      "name": "CONCIERGERIE",
+      "block": "A",
+      "floor": 1,
+      "type": "SERVICE",
+      "verified_from": "Plan A-100 (page 9), Plan A-300 (page 30)",
+      "notes": "Local concierge bloc A"
+    },
+    {
+      "id": "A-116",
+      "name": "ESCALIER",
+      "block": "A",
+      "floor": 1,
+      "type": "CIRCULATION",
+      "verified_from": "Plan A-300 (page 30)",
+      "notes": "Escalier principal reliant niveaux 1-2"
+    },
+    {
+      "id": "A-201",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Plan A-100 (page 4), Plan A-101 (page 12), Plan A-300 (page 30)",
+      "notes": "Classe standard bloc A, étage"
+    },
+    {
+      "id": "A-206",
+      "name": "ESCALIER",
+      "block": "A",
+      "floor": 2,
+      "type": "CIRCULATION",
+      "verified_from": "Plan A-101 (page 12), Plan A-300 (page 30)",
+      "notes": "Arrivée escalier niveau 2"
+    },
+    {
+      "id": "B-101",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Plan B-100 (page 5), Plan B-101 (page 10), Plan B-300 (page 31)",
+      "notes": "Corridor principal bloc B"
+    },
+    {
+      "id": "B-102",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Plan B-100 (page 8), Plan B-300 (page 31)",
+      "notes": "Classe bloc B"
+    },
+    {
+      "id": "B-111",
+      "name": "TOILETTES",
+      "block": "B",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Plan B-100 (page 5), Plan B-101 (page 10), Plan B-300 (page 31)",
+      "notes": "Toilettes bloc B"
+    },
+    {
+      "id": "B-114",
+      "name": "CONCIERGERIE",
+      "block": "B",
+      "floor": 1,
+      "type": "SERVICE",
+      "verified_from": "Plan B-100 (pages 5, 8), Plan B-300 (page 31)",
+      "notes": "Local concierge bloc B"
+    },
+    {
+      "id": "B-137",
+      "name": "GYMNASE",
+      "block": "B",
+      "floor": 1,
+      "type": "GYMNASE",
+      "verified_from": "Plan B-100 (page 8)",
+      "notes": "Gymnase principal de l'école"
+    },
+    {
+      "id": "C-101",
+      "name": "CORRIDOR",
+      "block": "C",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Plan C-100 (page 10), Plan C-300 (page 31)",
+      "notes": "Corridor bloc C"
+    },
+    {
+      "id": "C-102",
+      "name": "CLASSE",
+      "block": "C",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Plan C-100 (page 10), Plan C-300 (page 31)",
+      "notes": "Classe bloc C"
+    },
+    {
+      "id": "C-104",
+      "name": "VESTIAIRE",
+      "block": "C",
+      "floor": 1,
+      "type": "VESTIAIRE",
+      "verified_from": "Plan C-100 (page 4), Plan C-300 (page 31)",
+      "notes": "Vestiaire bloc C"
+    },
+    {
+      "id": "C-105",
+      "name": "TOILETTES",
+      "block": "C",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Plan C-100 (page 4), Plan C-300 (page 31)",
+      "notes": "Toilettes bloc C"
+    },
+    {
+      "id": "C-106",
+      "name": "LOCAL MÉCANIQUE",
+      "block": "C",
+      "floor": 1,
+      "type": "TECHNIQUE",
+      "verified_from": "Plan C-100 (page 4), Plan C-300 (page 31)",
+      "notes": "Local technique bloc C"
+    }
+  ],
+  "verified_products": [
+    {
+      "section": "09 91 00",
+      "category": "Peinture",
+      "product": "Sherwin-Williams ProMar 200",
+      "type": "Latex acrylique",
+      "verified_from": "Devis section 09 91 00",
+      "application": "Murs et plafonds intérieurs"
+    },
+    {
+      "section": "09 91 00",
+      "category": "Peinture",
+      "product": "Benjamin Moore Regal Select",
+      "type": "Latex premium",
+      "verified_from": "Devis section 09 91 00",
+      "application": "Finition haut de gamme"
+    },
+    {
+      "section": "09 65 00",
+      "category": "Revêtement de sol résilient",
+      "product": "Armstrong VCT",
+      "type": "Tuiles de vinyle composite",
+      "verified_from": "Devis section 09 65 00",
+      "application": "Planchers classes et corridors"
+    },
+    {
+      "section": "09 30 00",
+      "category": "Carrelage",
+      "product": "Céramique format 12x12",
+      "type": "Carrelage mural et sol",
+      "verified_from": "Devis section 09 30 00",
+      "application": "Toilettes et vestiaires"
+    },
+    {
+      "section": "09 51 00",
+      "category": "Plafonds acoustiques",
+      "product": "Armstrong Cortega",
+      "type": "Tuiles acoustiques 2x2",
+      "verified_from": "Devis section 09 51 00",
+      "application": "Plafonds suspendus classes"
+    },
+    {
+      "section": "09 29 00",
+      "category": "Panneaux de gypse",
+      "product": "CGC Sheetrock",
+      "type": "Gypse 1/2\" et 5/8\"",
+      "verified_from": "Devis section 09 29 00",
+      "application": "Cloisons intérieures"
+    },
+    {
+      "section": "08 14 00",
+      "category": "Portes bois",
+      "product": "Portes à âme pleine",
+      "type": "Portes intérieures",
+      "verified_from": "Devis section 08 14 00",
+      "application": "Toutes portes intérieures"
+    },
+    {
+      "section": "09 64 00",
+      "category": "Plancher bois",
+      "product": "Érable franc",
+      "type": "Plancher sport",
+      "verified_from": "Devis section 09 64 00",
+      "application": "Gymnase"
+    }
+  ],
+  "room_type_distribution": {
+    "CLASSE": 28,
+    "CORRIDOR": 12,
+    "WC": 10,
+    "RANGEMENT": 8,
+    "TECHNIQUE": 6,
+    "SERVICE": 4,
+    "CIRCULATION": 4,
+    "VESTIAIRE": 2,
+    "GYMNASE": 1,
+    "AUTRE": 23
+  },
+  "validation_notes": [
+    "Total de 98 locaux identifiés dans les plans",
+    "Bloc A: 46 locaux (niveaux 1 et 2)",
+    "Bloc B: 26 locaux (niveau 1 uniquement)",
+    "Bloc C: 26 locaux (niveau 1 uniquement)",
+    "Les numéros de pages correspondent au PDF des plans",
+    "Les sections CSI suivent la norme MasterFormat"
+  ]
+}

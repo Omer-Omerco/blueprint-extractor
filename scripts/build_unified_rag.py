@@ -167,6 +167,7 @@ class UnifiedRAGBuilder:
         self.chunks = chunks_data.get("chunks", [])
         self.rooms_by_id = {r["id"]: r for r in self.rooms}
         self.rooms_by_type = defaultdict(list)
+        self.quality_meta = rooms_data.get("quality_meta", {})
         
         # Group rooms by type
         for room in self.rooms:
@@ -270,6 +271,10 @@ class UnifiedRAGBuilder:
                 "room_info": room,
                 "room_type": csi_info["room_type"],
                 "type_description": csi_info["type_description"],
+                "confidence": room.get("confidence"),
+                "extraction_method": room.get("extraction_method"),
+                "source_pages": room.get("source_pages", room.get("pages", [])),
+                "primary_source": room.get("primary_source"),
                 "csi_required": [
                     {"code": c, "title": CSI_DESCRIPTIONS.get(c, "")}
                     for c in csi_info["required"]
@@ -391,6 +396,9 @@ class UnifiedRAGBuilder:
                 "room_type": room_type,
                 "floor": room.get("floor"),
                 "block": room.get("block"),
+                "confidence": room.get("confidence"),
+                "extraction_method": room.get("extraction_method"),
+                "source_pages": room.get("source_pages", room.get("pages", [])),
                 "searchable_text": f"{room_id} {room.get('name', '')} {room_type} {csi_text}",
                 "csi_codes": csi_codes
             })
@@ -432,6 +440,10 @@ class UnifiedRAGBuilder:
     
     def build_unified_index(self) -> dict:
         """Build complete unified index."""
+        # Calculate confidence statistics
+        confidences = [r.get("confidence") for r in self.rooms if r.get("confidence") is not None]
+        avg_confidence = sum(confidences) / len(confidences) if confidences else None
+        
         return {
             "meta": {
                 "project": "Réhabilitation de l'école Enfant-Jésus",
@@ -443,8 +455,17 @@ class UnifiedRAGBuilder:
                     "bidirectional_room_csi_links",
                     "room_type_defaults",
                     "material_type_index",
-                    "text_search_entries"
+                    "text_search_entries",
+                    "confidence_scores",
+                    "source_traceability"
                 ]
+            },
+            "quality": {
+                "average_confidence": round(avg_confidence, 3) if avg_confidence else None,
+                "rooms_with_confidence": len(confidences),
+                "high_confidence_count": sum(1 for c in confidences if c >= 0.8),
+                "low_confidence_count": sum(1 for c in confidences if c < 0.5),
+                **self.quality_meta
             },
             "rooms": self.rooms,
             "room_index": self.build_room_index(),
