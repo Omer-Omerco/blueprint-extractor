@@ -2,12 +2,8 @@
 # Core
 pymupdf>=1.23.0        # PDF extraction (fitz) - main extraction engine
 Pillow>=9.0.0          # Image manipulation
-
-# Analysis
-numpy>=1.24.0          # Numerical operations
-
-# RAG (optional)
-chromadb>=0.4.0        # Vector store for RAG queries
+anthropic>=0.30.0      # Claude API - pipeline 4 agents
+pytesseract>=0.3.10    # OCR fallback (extract_bbox.py)
 
 # Testing
 pytest>=7.0.0          # Test framework

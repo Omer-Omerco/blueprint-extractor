@@ -16,8 +16,11 @@ from door_detector import (
     determine_swing_direction,
     find_nearby_door_number,
     is_door_arc,
+    is_door_label,
+    normalize_door_number,
     calculate_confidence,
     detect_doors,
+    detect_doors_from_labels,
     run_detection,
 )
 
@@ -123,52 +126,40 @@ class TestFindNearbyDoorNumber:
 
     def test_finds_p_dash_number(self):
         """Should find P-XX format door numbers."""
-        curve = {
-            "start": {"x": 100, "y": 100},
-            "end": {"x": 150, "y": 150}
-        }
+        position = {"x": 125, "y": 125}  # Center of curve
         texts = [
             {"text": "P-01", "bbox": {"x0": 120, "y0": 120, "x1": 140, "y1": 130}},
             {"text": "ROOM", "bbox": {"x0": 200, "y0": 200, "x1": 250, "y1": 220}}
         ]
-        result = find_nearby_door_number(curve, texts)
+        result = find_nearby_door_number(position, texts)
         assert result == "P-01"
 
     def test_finds_p_number_format(self):
         """Should find PXX format and normalize to P-XX."""
-        curve = {
-            "start": {"x": 100, "y": 100},
-            "end": {"x": 150, "y": 150}
-        }
+        position = {"x": 125, "y": 125}
         texts = [
             {"text": "P12", "bbox": {"x0": 120, "y0": 120, "x1": 140, "y1": 130}}
         ]
-        result = find_nearby_door_number(curve, texts)
+        result = find_nearby_door_number(position, texts)
         assert result == "P-12"
 
     def test_ignores_distant_numbers(self):
         """Should not match door numbers that are too far away."""
-        curve = {
-            "start": {"x": 100, "y": 100},
-            "end": {"x": 150, "y": 150}
-        }
+        position = {"x": 125, "y": 125}
         texts = [
             {"text": "P-01", "bbox": {"x0": 500, "y0": 500, "x1": 520, "y1": 510}}
         ]
-        result = find_nearby_door_number(curve, texts, max_distance=50)
+        result = find_nearby_door_number(position, texts, max_distance=50)
         assert result is None
 
     def test_finds_closest_when_multiple(self):
         """Should find the closest door number when multiple exist."""
-        curve = {
-            "start": {"x": 100, "y": 100},
-            "end": {"x": 150, "y": 150}
-        }
+        position = {"x": 125, "y": 125}
         texts = [
             {"text": "P-02", "bbox": {"x0": 200, "y0": 200, "x1": 220, "y1": 210}},
             {"text": "P-01", "bbox": {"x0": 120, "y0": 120, "x1": 140, "y1": 130}},
         ]
-        result = find_nearby_door_number(curve, texts)
+        result = find_nearby_door_number(position, texts)
         assert result == "P-01"
 
 
@@ -206,44 +197,40 @@ class TestIsDoorArc:
 class TestCalculateConfidence:
     """Tests for confidence score calculation."""
 
-    def test_base_confidence(self):
-        """Should have base confidence of 0.5."""
-        curve = {
-            "start": {"x": 0, "y": 0},
-            "end": {"x": 50, "y": 50}
-        }
-        conf = calculate_confidence(curve, has_line=False, has_number=False)
+    def test_base_confidence_for_arc(self):
+        """Should have base confidence of 0.5 for arc detection."""
+        conf = calculate_confidence("arc", has_arc=True, has_line=False, has_number=False)
         assert conf >= 0.5
 
     def test_higher_confidence_with_line(self):
         """Should increase confidence with associated line."""
-        curve = {
-            "start": {"x": 0, "y": 0},
-            "end": {"x": 50, "y": 50}
-        }
-        conf_no_line = calculate_confidence(curve, has_line=False, has_number=False)
-        conf_with_line = calculate_confidence(curve, has_line=True, has_number=False)
+        conf_no_line = calculate_confidence("arc", has_arc=True, has_line=False, has_number=False)
+        conf_with_line = calculate_confidence("arc", has_arc=True, has_line=True, has_number=False)
         assert conf_with_line > conf_no_line
 
     def test_higher_confidence_with_number(self):
         """Should increase confidence with door number."""
-        curve = {
-            "start": {"x": 0, "y": 0},
-            "end": {"x": 50, "y": 50}
-        }
-        conf_no_num = calculate_confidence(curve, has_line=False, has_number=False)
-        conf_with_num = calculate_confidence(curve, has_line=False, has_number=True)
+        conf_no_num = calculate_confidence("arc", has_arc=True, has_line=False, has_number=False)
+        conf_with_num = calculate_confidence("arc", has_arc=True, has_line=False, has_number=True)
         assert conf_with_num > conf_no_num
 
     def test_max_confidence_capped(self):
         """Confidence should not exceed 1.0."""
-        curve = {
-            "start": {"x": 100, "y": 0},
-            "end": {"x": 0, "y": 100},
-            "center": {"x": 0, "y": 0}
-        }
-        conf = calculate_confidence(curve, has_line=True, has_number=True)
+        conf = calculate_confidence("arc", has_arc=True, has_line=True, has_number=True, angle_quality=1.0)
         assert conf <= 1.0
+    
+    def test_label_detection_confidence(self):
+        """Label-only detection should have lower base confidence than full arc detection."""
+        # Full arc detection with line and number
+        arc_full_conf = calculate_confidence("arc", has_arc=True, has_line=True, has_number=True, angle_quality=1.0)
+        # Label-only detection with number
+        label_conf = calculate_confidence("label", has_number=True)
+        # Full arc detection should be higher confidence than label-only
+        assert label_conf < arc_full_conf
+        # Label base (without number) should be lower than arc base
+        label_base = calculate_confidence("label", has_number=False)
+        arc_base = calculate_confidence("arc", has_arc=True)
+        assert label_base < arc_base
 
 
 class TestDetectDoors:
@@ -459,3 +446,136 @@ class TestDoorOutputFormat:
 
         assert "x" in position
         assert "y" in position
+
+
+class TestIsDoorLabel:
+    """Tests for door label pattern matching."""
+
+    def test_matches_p_dash_format(self):
+        """Should match P-XX format."""
+        assert is_door_label("P-01") is True
+        assert is_door_label("P-123") is True
+        assert is_door_label("P-01A") is True
+
+    def test_matches_p_format(self):
+        """Should match PXX format without dash."""
+        assert is_door_label("P01") is True
+        assert is_door_label("P12") is True
+
+    def test_matches_porte_format(self):
+        """Should match PORTE format (French)."""
+        assert is_door_label("PORTE 1") is True
+        assert is_door_label("PORTE12") is True
+
+    def test_matches_d_format(self):
+        """Should match D-XX format (English)."""
+        assert is_door_label("D-01") is True
+        assert is_door_label("D01") is True
+
+    def test_rejects_room_numbers(self):
+        """Should not match room numbers."""
+        assert is_door_label("100") is False
+        assert is_door_label("ROOM 101") is False
+        assert is_door_label("LOCAL 109") is False
+
+    def test_rejects_random_text(self):
+        """Should not match random text."""
+        assert is_door_label("CORRIDOR") is False
+        assert is_door_label("STAIRS") is False
+
+
+class TestNormalizeDoorNumber:
+    """Tests for door number normalization."""
+
+    def test_normalizes_to_p_format(self):
+        """Should normalize various formats to P-XX."""
+        assert normalize_door_number("P-01") == "P-01"
+        assert normalize_door_number("P01") == "P-01"
+        assert normalize_door_number("P1") == "P-01"
+        assert normalize_door_number("P-123") == "P-123"
+
+    def test_preserves_suffix(self):
+        """Should preserve letter suffix."""
+        assert normalize_door_number("P-01A") == "P-01A"
+        assert normalize_door_number("P12B") == "P-12B"
+
+
+class TestLabelBasedDetection:
+    """Tests for label-only door detection."""
+
+    def test_detects_doors_from_labels_only(self):
+        """Should detect doors from labels when no arcs present."""
+        vectors = {
+            "curves": [],
+            "lines": [],
+            "texts": [
+                {"text": "P-01", "bbox": {"x0": 100, "y0": 100, "x1": 120, "y1": 110}},
+                {"text": "P-02", "bbox": {"x0": 200, "y0": 200, "x1": 220, "y1": 210}}
+            ],
+            "page": 1
+        }
+        doors = detect_doors(vectors)
+
+        assert len(doors) == 2
+        assert doors[0]["number"] == "P-01"
+        assert doors[1]["number"] == "P-02"
+        assert doors[0]["detection_method"] == "label"
+
+    def test_label_doors_have_null_swing(self):
+        """Label-only doors should have null swing angle."""
+        vectors = {
+            "curves": [],
+            "lines": [],
+            "texts": [
+                {"text": "P-01", "bbox": {"x0": 100, "y0": 100, "x1": 120, "y1": 110}}
+            ]
+        }
+        doors = detect_doors(vectors)
+
+        assert len(doors) == 1
+        assert doors[0]["swing_angle"] is None
+        assert doors[0]["width_estimate"] is None
+        assert doors[0]["direction"] == "unknown"
+
+    def test_combines_arc_and_label_detection(self):
+        """Should combine arc-detected and label-detected doors."""
+        vectors = {
+            "curves": [
+                {"start": {"x": 100, "y": 0}, "end": {"x": 0, "y": 100}, "center": {"x": 0, "y": 0}}
+            ],
+            "lines": [],
+            "texts": [
+                {"text": "P-01", "bbox": {"x0": 45, "y0": 45, "x1": 65, "y1": 55}},  # Near arc
+                {"text": "P-02", "bbox": {"x0": 500, "y0": 500, "x1": 520, "y1": 510}}  # Far from arc
+            ],
+            "page": 1
+        }
+        doors = detect_doors(vectors)
+
+        # Should have 2 doors: one arc-detected with P-01, one label-only with P-02
+        assert len(doors) == 2
+        
+        arc_door = next(d for d in doors if d["detection_method"] == "arc")
+        label_door = next(d for d in doors if d["detection_method"] == "label")
+        
+        assert arc_door["number"] == "P-01"
+        assert label_door["number"] == "P-02"
+
+    def test_avoids_duplicate_doors(self):
+        """Should not create duplicate doors from same label near arc."""
+        vectors = {
+            "curves": [
+                {"start": {"x": 100, "y": 0}, "end": {"x": 0, "y": 100}, "center": {"x": 0, "y": 0}}
+            ],
+            "lines": [],
+            "texts": [
+                {"text": "P-01", "bbox": {"x0": 45, "y0": 45, "x1": 65, "y1": 55}}  # Near arc
+            ],
+            "page": 1
+        }
+        doors = detect_doors(vectors)
+
+        # Should only have 1 door (arc-detected with P-01), not 2
+        assert len(doors) == 1
+        assert doors[0]["detection_method"] == "arc"
+        assert doors[0]["number"] == "P-01"

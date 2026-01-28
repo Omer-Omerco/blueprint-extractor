@@ -128,9 +128,9 @@ blueprint-extractor/
 │   ├── page_selector.py         # Sélection optimale
 │   ├── pipeline_orchestrator.py # Pipeline 4 agents
 │   └── agents/                  # Modules des 4 agents
-├── tests/                       # 207 tests pytest
+├── tests/                       # 500+ tests pytest
 ├── output/                      # Résultats d'extraction
-└── requirements.txt             # pymupdf, pillow, numpy
+└── requirements.txt             # pymupdf, pillow, anthropic, pytesseract
 ```
 
 ## Exemple d'utilisation
@@ -155,8 +155,14 @@ python scripts/dimension_detector.py output/vectors.json -o output/dimensions.js
 
 ```bash
 source .venv/bin/activate
-pytest tests/ -v  # 207 tests
+pytest tests/ -v  # 500+ tests
 ```
+
+### Prerequisites
+- Python 3.10+
+- `anthropic` — Claude API key requis pour le pipeline 4 agents
+- `pytesseract` + Tesseract installé — OCR fallback
+- `pymupdf` — extraction vectorielle PDF
 
 ## Limitations
 

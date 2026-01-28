@@ -134,8 +134,8 @@
 | 2.1 page_classifier | Claude Code #3 | ✅ DONE |
 | 2.2 page_selector | Claude Code #3 | ✅ DONE |
 | 3.x Pipeline agents | Claude Code #4 | ✅ DONE |
-| 4.x Cleanup | Main (moi) | ⏳ |
-| 5.x GitHub | Main (moi) | ⏳ |
+| 4.x Cleanup | Main (moi) | ✅ DONE |
+| 5.x GitHub | Main (moi) | ✅ PUSHED (64e9559) |
 
 ## E2E Test Results (2025-01-28)
 - **207 tests passent**

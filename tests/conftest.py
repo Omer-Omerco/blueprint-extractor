@@ -88,6 +88,35 @@ def temp_output_dir(temp_dir):
     return output_dir
 
 
+@pytest.fixture
+def sample_pdf(temp_dir):
+    """Create a simple test PDF file."""
+    try:
+        import fitz
+    except ImportError:
+        pytest.skip("PyMuPDF not installed")
+    
+    pdf_path = temp_dir / "sample.pdf"
+    
+    # Create a simple PDF with one page
+    doc = fitz.open()
+    page = doc.new_page(width=612, height=792)  # Letter size
+    
+    # Add some content
+    text_point = fitz.Point(100, 100)
+    page.insert_text(text_point, "Test Blueprint Page", fontsize=12)
+    
+    # Add a rectangle to simulate a room
+    rect = fitz.Rect(50, 50, 200, 200)
+    page.draw_rect(rect, color=(0, 0, 0), width=1)
+    
+    # Save
+    doc.save(str(pdf_path))
+    doc.close()
+    
+    return pdf_path
+
+
 # =============================================================================
 # Quebec construction data fixtures
 # =============================================================================
