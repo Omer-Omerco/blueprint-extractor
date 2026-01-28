@@ -1,0 +1,371 @@
+{
+  "verification_date": "2026-01-28T17:15:42.295660",
+  "model_used": "claude-sonnet-4-20250514 (via image tool)",
+  "method": "double-blind Vision AI verification - crops from bbox coordinates sent to independent vision model",
+  "total_gt_rooms": 99,
+  "total_verified": 30,
+  "sample_percentage": 30.3,
+  "results": {
+    "full_matches": 0,
+    "id_only_matches": 1,
+    "name_only_matches": 10,
+    "name_type_similar": 10,
+    "unreadable_crops": 7,
+    "mismatches": 30
+  },
+  "reliability_score": 0.0,
+  "reliability_percentage": "0.0%",
+  "high_confidence_results": {
+    "total": 17,
+    "id_matches": 1,
+    "percentage": "5.9%"
+  },
+  "key_findings": [
+    "CRITICAL: 0/30 rooms had FULL match (correct ID + correct name at bbox location)",
+    "Only 1/30 rooms had matching room IDs",
+    "7/30 crops were unreadable (no room label visible)",
+    "Most bbox coordinates point to WRONG locations on the page images",
+    "The bboxes in rooms_complete.json are NOT reliable for room identification",
+    "Vision often sees DIFFERENT room IDs than the GT at the bbox coordinates",
+    "This confirms the GT was auto-generated without proper spatial verification",
+    "Room names in GT may be correct (from text extraction) but bboxes are wrong"
+  ],
+  "diagnosis": {
+    "root_cause": "The bboxes in rooms_complete.json do not accurately point to the room labels on the page images. The crops show different rooms or non-room areas (notes, specs, other rooms).",
+    "gt_room_list_reliability": "UNKNOWN - room IDs and names may be correct from text extraction, but cannot be verified spatially because bboxes are misaligned",
+    "bbox_reliability": "VERY LOW - bboxes consistently point to wrong locations",
+    "recommendation": "1) Re-extract bboxes with proper spatial calibration, 2) Verify room list independently from nomenclature/devis documents rather than visual bbox verification"
+  },
+  "all_results": [
+    {
+      "gt_id": "A-213",
+      "gt_name": "ORTHOPÉDAGOGUE + ORTHOPHONIE",
+      "vision_id": "208",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.9,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-107",
+      "gt_name": "CLASSE",
+      "vision_id": "",
+      "vision_name": "",
+      "vision_confidence": 0.1,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-101",
+      "gt_name": "CLASSE",
+      "vision_id": "A-100",
+      "vision_name": "VESTIBULE",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-117",
+      "gt_name": "CLASSE",
+      "vision_id": "A-110",
+      "vision_name": "CHAUFFERIE",
+      "vision_confidence": 0.82,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-115",
+      "gt_name": "SALLE PROFESSEURS",
+      "vision_id": "A-118",
+      "vision_name": "SALLE PROFESSEURS",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "A-114",
+      "gt_name": "DÉPÔT",
+      "vision_id": "012",
+      "vision_name": "CORRIDOR",
+      "vision_confidence": 0.9,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-108",
+      "gt_name": "CLASSE",
+      "vision_id": "",
+      "vision_name": "",
+      "vision_confidence": 0.1,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-106",
+      "gt_name": "CLASSE",
+      "vision_id": "A-108",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "A-207",
+      "gt_name": "CORRIDOR",
+      "vision_id": "210",
+      "vision_name": "CORRIDOR",
+      "vision_confidence": 0.85,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "A-105",
+      "gt_name": "CLASSE",
+      "vision_id": "A-108",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "A-200",
+      "gt_name": "VESTIBULE",
+      "vision_id": "209",
+      "vision_name": "",
+      "vision_confidence": 0.3,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-102",
+      "gt_name": "SECRÉTARIAT",
+      "vision_id": "A-102",
+      "vision_name": "VESTIBULE",
+      "vision_confidence": 0.5,
+      "id_match": true,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "A-100",
+      "gt_name": "VESTIBULE",
+      "vision_id": "",
+      "vision_name": "",
+      "vision_confidence": 0.1,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-106",
+      "gt_name": "CLASSE",
+      "vision_id": "135",
+      "vision_name": "CLASSE MATERNELLE",
+      "vision_confidence": 0.9,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "B-114",
+      "gt_name": "CLASSE",
+      "vision_id": "A-133",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.7,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "B-115",
+      "gt_name": "CLASSE",
+      "vision_id": "A-130",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "B-146",
+      "gt_name": "CLASSE",
+      "vision_id": "A-500",
+      "vision_name": "UNKNOWN",
+      "vision_confidence": 0.15,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-102",
+      "gt_name": "CLASSE MATERNELLE",
+      "vision_id": "A-132",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "B-201",
+      "gt_name": "ORTHOPATHOLOGIE ECE",
+      "vision_id": "",
+      "vision_name": "",
+      "vision_confidence": 0.05,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-113",
+      "gt_name": "CLASSE",
+      "vision_id": "A-133",
+      "vision_name": "CLASSE",
+      "vision_confidence": 0.62,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "B-148",
+      "gt_name": "CLASSE",
+      "vision_id": "A-104",
+      "vision_name": "NOUVELLE TRAPPE D'ACCES",
+      "vision_confidence": 0.2,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-140",
+      "gt_name": "CLASSE MATERNELLE",
+      "vision_id": "A-113",
+      "vision_name": "LOCAL",
+      "vision_confidence": 0.3,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-205",
+      "gt_name": "CORRIDOR",
+      "vision_id": "A-147",
+      "vision_name": "WC FILLES",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-142",
+      "gt_name": "CLASSE",
+      "vision_id": "A-800",
+      "vision_name": "",
+      "vision_confidence": 0.15,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-125",
+      "gt_name": "CORRIDOR",
+      "vision_id": "D-136",
+      "vision_name": "WC GARÇONS",
+      "vision_confidence": 0.75,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "B-109",
+      "gt_name": "CLASSE",
+      "vision_id": "B-131",
+      "vision_name": "CLASSE MATERNELLE",
+      "vision_confidence": 0.92,
+      "id_match": false,
+      "name_match": true,
+      "full_match": false,
+      "name_type_match": true
+    },
+    {
+      "gt_id": "C-149",
+      "gt_name": "LOCAL TECHNICIEN(NE)",
+      "vision_id": "",
+      "vision_name": "",
+      "vision_confidence": 0.0,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "C-101",
+      "gt_name": "CORRIDOR",
+      "vision_id": "C-151",
+      "vision_name": "BLOC C",
+      "vision_confidence": 0.3,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "C-103",
+      "gt_name": "RANGEMENT",
+      "vision_id": "A-800",
+      "vision_name": "MÉCANIQUE",
+      "vision_confidence": 0.3,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    },
+    {
+      "gt_id": "C-107",
+      "gt_name": "LOCAL TECHNIQUE",
+      "vision_id": "A-102",
+      "vision_name": "UNKNOWN",
+      "vision_confidence": 0.25,
+      "id_match": false,
+      "name_match": false,
+      "full_match": false,
+      "name_type_match": false
+    }
+  ]
+}
