@@ -78,6 +78,21 @@ python scripts/page_selector.py output/page_types.json -n 5 -o output/selected.j
 
 Stratégie: 1 LEGEND + 4 PLAN diversifiés
 
+### 6. Pipeline E2E (nouveau)
+```bash
+python scripts/run_pipeline.py plans.pdf --output-dir ./output/
+python scripts/run_pipeline.py plans.pdf --pages 1-10 --output-dir ./output/
+```
+
+Orchestre toutes les étapes: extraction vectorielle → détection (locaux, dimensions, portes) → RAG → validation → rapport.
+
+### 7. Validation Ground Truth
+```bash
+python scripts/validate_gt.py -e output/rooms_complete.json -g ground_truth/emj.json -v
+```
+
+Compare les extractions avec la vérité terrain. Supporte l'inférence de type depuis le nom et le matching fuzzy de synonymes québécois.
+
 ### 6. Pipeline 4 Agents (orchestré)
 ```bash
 python scripts/pipeline_orchestrator.py --pages p1.png p2.png --output output/
