@@ -1,10 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Output files (generated)
+output/
 test_output/
+!output/.gitkeep
+
+# Images (too large for git)
 *.png
 *.jpg
-__pycache__/
-*.pyc
-.DS_Store
+*.jpeg
 
-.venv/
-output/
-!output/.gitkeep
+# PDFs (too large)
+*.pdf
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Deprecated files
+*.deprecated

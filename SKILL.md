@@ -1,143 +1,109 @@
+---
+name: blueprint-extractor
+description: Analyse de plans de construction québécois avec extraction de locaux, dimensions, et génération de crops. Utilise PyMuPDF pour extraction vectorielle directe du PDF.
+metadata: {"clawdbot":{"emoji":"🏗️","triggers":["blueprint","plan","construction","local","locaux","bbox","crop","étage","bloc","dimension"]}}
+---
+
 # Blueprint Extractor
 
-Analyse de plans de construction québécois avec extraction vers JSON/RAG.
+Analyse de plans de construction québécois avec extraction vectorielle via PyMuPDF.
 
 ## ⚠️ RÈGLE ABSOLUE — ZÉRO HALLUCINATION
 
 **JAMAIS inventer d'information.** C'est un projet de construction réel — des erreurs peuvent coûter cher ou être dangereuses.
 
-### Si tu ne trouves pas l'info dans le RAG:
+### Si tu ne trouves pas l'info:
 ```
 ❌ INTERDIT: "La peinture est probablement du latex..."
 ✅ CORRECT:  "Je n'ai pas trouvé cette information dans les documents. 
              Vérifie avec l'architecte ou le devis section XX."
 ```
 
-### Si tu n'es pas sûr à 100%:
-```
-❌ INTERDIT: "Le local 204 mesure 25'-6\" x 30'-0\""
-✅ CORRECT:  "Selon le plan A-150, le local 204 semble mesurer ~25' x 30', 
-             mais je te recommande de vérifier sur le plan."
-```
-
 ### Toujours citer tes sources:
 ```
 "Selon le devis section 09 91 00, page 45..."
 "D'après le plan A-150..."
-"Je n'ai pas trouvé cette info — vérifie avec [professionnel]"
 ```
-
-## Trigger
-
-Utiliser quand l'utilisateur demande d'analyser des plans de construction, blueprints, plans architecturaux, ou d'extraire des informations de PDF de plans.
 
 ## Vue d'ensemble
 
-Ce skill extrait les données structurées (locaux, portes, fenêtres, dimensions) de plans de construction PDF en utilisant un pipeline vision à 4 agents.
+Ce skill extrait les données structurées (locaux, dimensions, portes) de plans de construction PDF en utilisant **PyMuPDF** pour l'extraction vectorielle directe — pas d'OCR nécessaire.
+
+**Avantages vs OCR:**
+- ✅ Extraction 100% précise (texte vectoriel du PDF)
+- ✅ Rapide (millisecondes vs secondes)
+- ✅ Pas de dépendances GPU/ML
+- ✅ Bounding boxes pixel-perfect
 
 **Important:** Toutes les dimensions sont en **PIEDS ET POUCES** (standard Québec).
 
-## Workflow
+## Scripts Principaux
 
-### Étape 1: Extraction des pages (script)
-
+### 1. Extraction vectorielle
 ```bash
 cd /Users/omer/clawd/skills/blueprint-extractor
 source .venv/bin/activate
-python scripts/extract_pages.py "/chemin/vers/plans.pdf" -o ./output/pages -p 1-10
+
+# Extraire texte + dessins vectoriels d'une page
+python scripts/extract_pdf_vectors.py "plans.pdf" -p 12 -o output/vectors.json
 ```
 
-Ceci génère des images PNG haute résolution (300 DPI) + `manifest.json`.
+Output: `{ pages: [{ text_blocks: [...], drawings: [...] }] }`
 
-### Étape 2: Sélection des pages clés
-
-Parmi les pages extraites, identifier visuellement:
-1. **LEGEND** (légende des symboles) — priorité maximale
-2. **PLANS D'ÉTAGE** (floor plans) — pages avec locaux numérotés
-
-Sélectionner 5 pages max pour l'analyse initiale.
-
-### Étape 3: Pipeline 4 Agents (toi-même)
-
-**Tu ES les 4 agents.** Exécute-les en séquence:
-
-#### Agent 1: Guide Builder
-Charge les 5 pages sélectionnées avec le tool `image` et analyse:
-- Symboles et leur signification (légende)
-- Patterns de cotation (dimensions pieds-pouces)
-- Conventions visuelles (portes = arcs, fenêtres = lignes parallèles)
-- Noms de locaux (CLASSE, CORRIDOR, S.D.B., etc.)
-
-**Output:** `provisional_guide` (markdown) + `candidate_rules` (JSON)
-
-#### Agent 2: Guide Applier
-Charge 3 AUTRES pages et valide chaque règle:
-- CONFIRMED: la règle fonctionne
-- CONTRADICTED: la règle est fausse
-- VARIATION: légère différence acceptable
-
-**Output:** `validation_reports` par page
-
-#### Agent 3: Self-Validator
-Analyse les rapports de validation:
-- `confidence_score`: 0.0 - 1.0
-- `can_generate_final`: true si confidence ≥ 0.7
-- `stable_rules`: liste des règles confirmées
-
-#### Agent 4: Consolidator
-Génère le guide final:
-- `stable_guide.md`: guide markdown lisible
-- `stable_rules.json`: règles machine-executable
-
-### Étape 4: Extraction des objets
-
-Pour CHAQUE page, extrais avec vision:
-
-```json
-{
-  "rooms": [
-    {
-      "id": "101",
-      "name": "CLASSE",
-      "dimensions": "25'-6\" x 30'-0\"",
-      "area_sqft": 765,
-      "page": 3
-    }
-  ],
-  "doors": [
-    {
-      "id": "P-01",
-      "type": "simple",
-      "width": "3'-0\"",
-      "swing_angle": 90,
-      "page": 3
-    }
-  ],
-  "windows": [...],
-  "dimensions": [...]
-}
-```
-
-### Étape 5: Build RAG (script)
-
+### 2. Détection de locaux
 ```bash
-python scripts/build_rag.py ./output -o ./output/rag
+python scripts/room_detector.py output/vectors.json -o output/rooms.json
 ```
 
-### Étape 6: Query (script ou toi)
+Output: `{ rooms: [{ number: "204", name: "CLASSE", bbox: {...} }], stats: {...} }`
 
+### 3. Détection de dimensions
 ```bash
-python scripts/query_rag.py ./output/rag "classe 204"
+python scripts/dimension_detector.py output/vectors.json -o output/dimensions.json
 ```
 
-Ou toi directement: lis `./output/rag/index.json` et réponds aux questions.
+Output: `{ dimensions: [{ value_text: "25'-6\"", value_inches: 306.0 }] }`
 
-## Référence Patterns
+### 4. Classification de pages
+```bash
+python scripts/page_classifier.py "plans.pdf" -o output/page_types.json
+```
+
+Types: LEGEND, PLAN, DETAIL, ELEVATION, OTHER
+
+### 5. Sélection de pages optimales
+```bash
+python scripts/page_selector.py output/page_types.json -n 5 -o output/selected.json
+```
+
+Stratégie: 1 LEGEND + 4 PLAN diversifiés
+
+### 6. Pipeline 4 Agents (orchestré)
+```bash
+python scripts/pipeline_orchestrator.py --pages p1.png p2.png --output output/
+```
+
+Exécute: Guide Builder → Guide Applier → Self-Validator → Consolidator
+
+## Pipeline 4 Agents
+
+Le pipeline analyse les plans en 4 étapes:
+
+| Agent | Input | Output |
+|-------|-------|--------|
+| **Guide Builder** | 5 pages images | provisional_guide.md + candidate_rules.json |
+| **Guide Applier** | guide + 3 pages validation | validation_reports.json |
+| **Self-Validator** | guide + reports | confidence_report.json (score 0-1) |
+| **Consolidator** | guide + confidence | stable_guide.md + stable_rules.json |
+
+Confiance minimale pour guide final: **0.7**
+
+## Formats de données
 
 ### Dimensions (pieds-pouces)
-- Standard: `25'-6"` (25 pieds 6 pouces)
-- Avec fraction: `12'-6 5/8"`
-- Conversion: `(pieds × 12) + pouces = pouces totaux`
+- Standard: `25'-6"` = 306 pouces
+- Avec fraction: `12'-6 5/8"` = 150.625 pouces
+- Conversion: `(pieds × 12) + pouces`
 
 ### Noms de locaux québécois
 | Abrév. | Nom complet |
@@ -147,45 +113,52 @@ Ou toi directement: lis `./output/rag/index.json` et réponds aux questions.
 | CORR. | Corridor |
 | RANG. | Rangement |
 | MÉC. | Salle mécanique |
-| ÉLEC. | Salle électrique |
 
-### Symboles courants
-- **Porte:** Arc 90° avec ligne (direction d'ouverture)
-- **Fenêtre:** 3 lignes parallèles dans l'épaisseur du mur
-- **Mur existant:** Ligne pleine épaisse
-- **Mur à démolir:** Hachuré ou pointillé
-
-## Fichiers du skill
+## Structure du skill
 
 ```
 blueprint-extractor/
-├── SKILL.md                 # Ce fichier
+├── SKILL.md                     # Ce fichier
 ├── scripts/
-│   ├── extract_pages.py     # PDF → images (seul script nécessaire en externe)
-│   ├── build_rag.py         # Construit l'index RAG
-│   └── query_rag.py         # Requêtes RAG
-├── references/
-│   ├── dimension_patterns.md
-│   ├── room_patterns.md
-│   └── symbol_patterns.md
-├── assets/prompts/          # Prompts pour les 4 agents (référence)
-└── tests/                   # Suite de tests pytest
+│   ├── extract_pdf_vectors.py   # PDF → texte + dessins (PyMuPDF)
+│   ├── room_detector.py         # Détection locaux
+│   ├── dimension_detector.py    # Détection dimensions pieds-pouces
+│   ├── door_detector.py         # Détection portes (arcs 90°)
+│   ├── page_classifier.py       # Classification pages
+│   ├── page_selector.py         # Sélection optimale
+│   ├── pipeline_orchestrator.py # Pipeline 4 agents
+│   └── agents/                  # Modules des 4 agents
+├── tests/                       # 207 tests pytest
+├── output/                      # Résultats d'extraction
+└── requirements.txt             # pymupdf, pillow, numpy
 ```
 
 ## Exemple d'utilisation
 
 **User:** "Analyse le plan de l'école Enfant-Jésus"
 
-**Toi:**
-1. Extrais les pages: `python scripts/extract_pages.py "/path/to/C25-256.pdf" -o ./output/pages`
-2. Charge 5 pages avec `image` tool
-3. Exécute le pipeline 4 agents
-4. Sauvegarde les résultats en JSON
-5. Build le RAG
-6. Réponds aux questions: "La classe 204 fait 25'-6\" x 30'-0\" (765 pi²)"
+**Workflow:**
+```bash
+# 1. Extraire les vecteurs
+python scripts/extract_pdf_vectors.py "C25-256.pdf" -p 1-15 -o output/vectors.json
 
-## Notes
+# 2. Détecter les locaux
+python scripts/room_detector.py output/vectors.json -o output/rooms.json
 
-- Les tests passent: `pytest tests/ -v` (129 tests)
-- Toujours utiliser pieds-pouces, JAMAIS le métrique
-- Confiance minimale pour générer le guide final: 0.7
+# 3. Détecter les dimensions  
+python scripts/dimension_detector.py output/vectors.json -o output/dimensions.json
+```
+
+**Réponse:** "Le local 204 est une CLASSE. J'ai détecté 48 locaux et 94 dimensions sur cette page."
+
+## Tests
+
+```bash
+source .venv/bin/activate
+pytest tests/ -v  # 207 tests
+```
+
+## Limitations
+
+- **door_detector:** Détecte les portes via arcs 90°. Certains PDFs représentent les portes différemment (pas d'arcs).
+- **Vectoriel seulement:** Ne fonctionne pas sur les PDF scannés (images raster). Utiliser OCR dans ce cas.
