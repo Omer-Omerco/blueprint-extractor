@@ -38,10 +38,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3687,
-        3035,
-        3911,
-        3210
+        3541,
+        2774,
+        3674,
+        2870
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -50,7 +50,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319012"
+      "bbox_updated": "2026-01-28T17:30:33.163743",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-101",
@@ -107,10 +108,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3178,
-        2780,
-        3278,
-        2868
+        3388,
+        2910,
+        3492,
+        2984
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -119,7 +120,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319034"
+      "bbox_updated": "2026-01-28T17:30:33.163814",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-102-2",
@@ -130,10 +132,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3178,
-        2868,
-        3278,
-        2956
+        3176,
+        2952,
+        3280,
+        3027
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -142,7 +144,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319036"
+      "bbox_updated": "2026-01-28T17:30:33.163855",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-102-3",
@@ -291,10 +294,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3464,
-        1956,
-        3638,
-        2079
+        3239,
+        2455,
+        3352,
+        2552
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -303,7 +306,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319046"
+      "bbox_updated": "2026-01-28T17:30:33.163954",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-109",
@@ -314,10 +318,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3303,
-        1956,
-        3452,
-        2079
+        3867,
+        2304,
+        3956,
+        2379
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -326,7 +330,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319047"
+      "bbox_updated": "2026-01-28T17:30:33.163983",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-110",
@@ -337,10 +342,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3501,
-        1719,
-        3650,
-        1929
+        3241,
+        1882,
+        3331,
+        1957
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -349,7 +354,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319049"
+      "bbox_updated": "2026-01-28T17:30:33.164011",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-111",
@@ -360,10 +366,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3675,
-        1640,
-        3824,
-        1763
+        3827,
+        1983,
+        3916,
+        2057
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -372,7 +378,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319050"
+      "bbox_updated": "2026-01-28T17:30:33.164037",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-112",
@@ -383,10 +390,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        2545,
-        2079,
-        2868,
-        2272
+        3805,
+        1962,
+        4100,
+        2057
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -395,7 +402,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319052"
+      "bbox_updated": "2026-01-28T17:30:33.164065",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-113",
@@ -406,10 +414,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        2942,
-        1579,
-        3116,
-        1719
+        3858,
+        1809,
+        3947,
+        1884
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -418,7 +426,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319053"
+      "bbox_updated": "2026-01-28T17:30:33.164091",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-114",
@@ -429,10 +438,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3079,
-        1579,
-        3327,
-        1719
+        3721,
+        1555,
+        3827,
+        1652
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -441,7 +450,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319055"
+      "bbox_updated": "2026-01-28T17:30:33.164122",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-115",
@@ -452,10 +462,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3377,
-        1157,
-        3526,
-        1438
+        3929,
+        1578,
+        4018,
+        1652
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -464,7 +474,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319056"
+      "bbox_updated": "2026-01-28T17:30:33.164149",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-116",
@@ -521,10 +532,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3799,
-        1500,
-        4048,
-        1658
+        3301,
+        1228,
+        3391,
+        1303
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -533,7 +544,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319061"
+      "bbox_updated": "2026-01-28T17:30:33.164201",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-119",
@@ -567,10 +579,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3439,
-        1087,
-        3762,
-        1228
+        3252,
+        1535,
+        3342,
+        1610
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -579,7 +591,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319064"
+      "bbox_updated": "2026-01-28T17:30:33.164247",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-121",
@@ -590,10 +603,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3799,
-        1315,
-        4048,
-        1491
+        3114,
+        1356,
+        3204,
+        1454
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -602,7 +615,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319065"
+      "bbox_updated": "2026-01-28T17:30:33.164276",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-122",
@@ -613,10 +627,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        3439,
-        1535,
-        3762,
-        1622
+        3202,
+        1444,
+        3292,
+        1518
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -625,7 +639,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319066"
+      "bbox_updated": "2026-01-28T17:30:33.164311",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-123",
@@ -636,10 +651,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        4110,
-        1245,
-        4234,
-        1350
+        3844,
+        1202,
+        3957,
+        1303
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -648,7 +663,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319068"
+      "bbox_updated": "2026-01-28T17:30:33.164338",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-124",
@@ -728,10 +744,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        4110,
-        2035,
-        4234,
-        2175
+        2887,
+        1882,
+        2976,
+        1957
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -740,7 +756,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319073"
+      "bbox_updated": "2026-01-28T17:30:33.164403",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-200",
@@ -751,10 +768,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1726,
-        1947,
-        1899,
-        2087
+        2666,
+        2774,
+        3674,
+        3398
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -763,7 +780,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319075"
+      "bbox_updated": "2026-01-28T17:30:33.164433",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-201",
@@ -797,10 +815,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1117,
-        1184,
-        1266,
-        1342
+        1768,
+        2815,
+        1857,
+        2890
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -809,7 +827,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319078"
+      "bbox_updated": "2026-01-28T17:30:33.164474",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-203",
@@ -820,10 +839,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1390,
-        991,
-        1688,
-        1184
+        2011,
+        2821,
+        2100,
+        2896
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -832,7 +851,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319079"
+      "bbox_updated": "2026-01-28T17:30:33.164504",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-204",
@@ -843,10 +863,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1378,
-        2508,
-        1601,
-        2684
+        1432,
+        2821,
+        1521,
+        2896
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -855,7 +875,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319080"
+      "bbox_updated": "2026-01-28T17:30:33.164545",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-205",
@@ -866,10 +887,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1080,
-        1728,
-        1452,
-        1956
+        2021,
+        2281,
+        2134,
+        2379
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -878,7 +899,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319082"
+      "bbox_updated": "2026-01-28T17:30:33.164575",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-206",
@@ -889,10 +911,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1527,
-        1728,
-        1850,
-        1956
+        1418,
+        2281,
+        1531,
+        2379
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -901,7 +923,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319083"
+      "bbox_updated": "2026-01-28T17:30:33.164604",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-207",
@@ -912,10 +935,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1192,
-        1552,
-        1788,
-        1640
+        2017,
+        1763,
+        2106,
+        1838
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -924,7 +947,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319084"
+      "bbox_updated": "2026-01-28T17:30:33.164635",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-208",
@@ -935,10 +959,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1080,
-        2236,
-        1452,
-        2465
+        1418,
+        1737,
+        1531,
+        1838
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -947,7 +971,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319086"
+      "bbox_updated": "2026-01-28T17:30:33.164665",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-209",
@@ -958,10 +983,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1527,
-        2236,
-        1850,
-        2465
+        1763,
+        1743,
+        2118,
+        1865
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -970,7 +995,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319087"
+      "bbox_updated": "2026-01-28T17:30:33.164694",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-210",
@@ -981,10 +1007,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1192,
-        2079,
-        1788,
-        2166
+        1659,
+        1607,
+        1793,
+        1707
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -993,7 +1019,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319089"
+      "bbox_updated": "2026-01-28T17:30:33.164721",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-211",
@@ -1004,10 +1031,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1875,
-        2210,
-        1999,
-        2491
+        1515,
+        1441,
+        1649,
+        1539
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -1016,7 +1043,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319090"
+      "bbox_updated": "2026-01-28T17:30:33.164747",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-212",
@@ -1027,10 +1055,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1303,
-        2719,
-        1527,
-        2894
+        1329,
+        1375,
+        1418,
+        1450
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -1039,7 +1067,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319091"
+      "bbox_updated": "2026-01-28T17:30:33.164773",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-213",
@@ -1050,10 +1079,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1502,
-        1789,
-        1775,
-        1965
+        1390,
+        1182,
+        1479,
+        1257
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -1062,7 +1091,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319093"
+      "bbox_updated": "2026-01-28T17:30:33.164816",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-214",
@@ -1073,10 +1103,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1812,
-        1789,
-        2011,
-        1965
+        1642,
+        1167,
+        1731,
+        1242
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -1085,7 +1115,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319094"
+      "bbox_updated": "2026-01-28T17:30:33.164841",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "A-215",
@@ -1096,10 +1127,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        2011,
-        1807,
-        2160,
-        1947
+        1774,
+        1146,
+        1879,
+        1244
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-1.png",
@@ -1108,7 +1139,8 @@
         3509
       ],
       "bbox_source": "page-012.png",
-      "bbox_updated": "2026-01-27T23:42:30.319096"
+      "bbox_updated": "2026-01-28T17:30:33.164872",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-101",
@@ -1326,10 +1358,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        2868,
-        1824,
-        3091,
-        2105
+        4036,
+        3053,
+        4125,
+        3128
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1338,7 +1370,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319111"
+      "bbox_updated": "2026-01-28T17:30:33.165259",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-111",
@@ -1579,10 +1612,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1303,
-        2210,
-        1477,
-        2351
+        3318,
+        2605,
+        3815,
+        2975
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1591,7 +1624,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319130"
+      "bbox_updated": "2026-01-28T17:30:33.165689",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-128",
@@ -1625,10 +1659,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1105,
-        2052,
-        1279,
-        2193
+        2437,
+        1933,
+        2550,
+        2047
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1637,7 +1671,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319134"
+      "bbox_updated": "2026-01-28T17:30:33.165811",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-134",
@@ -1648,10 +1683,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1105,
-        2210,
-        1279,
-        2351
+        2167,
+        2432,
+        2256,
+        2507
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1660,7 +1695,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319135"
+      "bbox_updated": "2026-01-28T17:30:33.165953",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-134-2",
@@ -1673,10 +1709,10 @@
       "needs_review": true,
       "review_note": "Non trouvé sur les plans - vérifier existence",
       "bbox": [
-        1129,
-        2333,
-        1254,
-        2438
+        2167,
+        2432,
+        2256,
+        2507
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1685,7 +1721,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319137"
+      "bbox_updated": "2026-01-28T17:30:33.166122",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-135",
@@ -1696,10 +1733,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        894,
-        2035,
-        1092,
-        2210
+        1862,
+        1933,
+        1975,
+        2047
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1708,7 +1745,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319139"
+      "bbox_updated": "2026-01-28T17:30:33.166223",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-136",
@@ -1719,10 +1757,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        894,
-        2245,
-        1092,
-        2421
+        1758,
+        2540,
+        1847,
+        2615
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1731,7 +1769,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319141"
+      "bbox_updated": "2026-01-28T17:30:33.166374",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-137",
@@ -1742,10 +1781,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        894,
-        2456,
-        1092,
-        2631
+        1289,
+        1974,
+        1378,
+        2049
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1754,7 +1793,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319142"
+      "bbox_updated": "2026-01-28T17:30:33.166520",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-138",
@@ -1765,10 +1805,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        695,
-        2035,
-        894,
-        2210
+        1329,
+        2593,
+        1418,
+        2668
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1777,7 +1817,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319144"
+      "bbox_updated": "2026-01-28T17:30:33.166678",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-139",
@@ -1880,10 +1921,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        496,
-        2456,
-        695,
-        2631
+        1186,
+        2286,
+        2344,
+        2755
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1892,7 +1933,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319152"
+      "bbox_updated": "2026-01-28T17:30:33.166896",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-144",
@@ -1926,10 +1968,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        298,
-        2245,
-        496,
-        2421
+        1208,
+        2307,
+        1297,
+        2382
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1938,7 +1980,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319155"
+      "bbox_updated": "2026-01-28T17:30:33.167009",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-146",
@@ -1949,10 +1992,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        298,
-        2456,
-        496,
-        2631
+        2266,
+        894,
+        2550,
+        2008
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1961,7 +2004,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319156"
+      "bbox_updated": "2026-01-28T17:30:33.167095",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-147",
@@ -1972,10 +2016,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        99,
-        2035,
-        298,
-        2210
+        2294,
+        1136,
+        2550,
+        2008
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -1984,7 +2028,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319158"
+      "bbox_updated": "2026-01-28T17:30:33.167184",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-148",
@@ -1995,10 +2040,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        99,
-        2245,
-        298,
-        2421
+        2251,
+        726,
+        2340,
+        801
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2007,7 +2052,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319159"
+      "bbox_updated": "2026-01-28T17:30:33.167273",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "B-149",
@@ -2409,10 +2455,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        198,
-        1394,
-        397,
-        1552
+        4036,
+        3053,
+        4125,
+        3128
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2421,7 +2467,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319185"
+      "bbox_updated": "2026-01-28T17:30:33.167935",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-111",
@@ -2593,10 +2640,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1788,
-        1394,
-        1986,
-        1552
+        4078,
+        2335,
+        4167,
+        2410
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2605,7 +2652,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319197"
+      "bbox_updated": "2026-01-28T17:30:33.168249",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-119",
@@ -2662,10 +2710,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        596,
-        684,
-        894,
-        859
+        1329,
+        2593,
+        1418,
+        2668
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2674,7 +2722,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319201"
+      "bbox_updated": "2026-01-28T17:30:33.168464",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-139",
@@ -2708,10 +2757,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        894,
-        701,
-        1092,
-        842
+        2390,
+        2448,
+        2465,
+        2537
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2720,7 +2769,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319204"
+      "bbox_updated": "2026-01-28T17:30:33.168654",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-143-1",
@@ -2733,10 +2783,10 @@
       "needs_review": true,
       "review_note": "Non trouvé sur les plans - vérifier existence",
       "bbox": [
-        1117,
-        719,
-        1266,
-        824
+        2390,
+        2448,
+        2465,
+        2537
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2745,7 +2795,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319206"
+      "bbox_updated": "2026-01-28T17:30:33.168831",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-145",
@@ -2756,10 +2807,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1291,
-        701,
-        1490,
-        842
+        1186,
+        2286,
+        1319,
+        2382
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2768,7 +2819,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319207"
+      "bbox_updated": "2026-01-28T17:30:33.168913",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-147",
@@ -2779,10 +2831,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        248,
-        350,
-        745,
-        701
+        1554,
+        587,
+        2335,
+        1010
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2791,7 +2843,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319209"
+      "bbox_updated": "2026-01-28T17:30:33.168993",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-148",
@@ -2802,10 +2855,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        993,
-        456,
-        1192,
-        596
+        2228,
+        704,
+        2362,
+        801
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2814,7 +2867,8 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319210"
+      "bbox_updated": "2026-01-28T17:30:33.169075",
+      "bbox_method": "pymupdf_text"
     },
     {
       "id": "C-149",
@@ -2848,10 +2902,10 @@
       "validated_by": "sniper_vision",
       "validation_date": "2025-01-28",
       "bbox": [
-        1390,
-        456,
-        1589,
-        596
+        1554,
+        447,
+        2118,
+        662
       ],
       "bbox_confidence": 0.85,
       "primary_source": "architecture/A-2.png",
@@ -2860,18 +2914,19 @@
         3509
       ],
       "bbox_source": "page-010.png",
-      "bbox_updated": "2026-01-27T23:42:30.319213"
+      "bbox_updated": "2026-01-28T17:30:33.169194",
+      "bbox_method": "pymupdf_text"
     }
   ],
   "total_rooms": 123,
   "bbox_extraction": {
-    "date": "2026-01-27T23:42:30.319214",
-    "method": "vision_ai_percentage_analysis",
+    "date": "2026-01-28T17:30:33.169556",
+    "method": "pymupdf_text_extraction",
     "plans_analyzed": [
       "page-010.png",
       "page-012.png"
     ],
-    "total_bboxes_extracted": 123,
-    "rooms_without_update": []
+    "total_bboxes_extracted": 55,
+    "rooms_not_found": 68
   }
 }

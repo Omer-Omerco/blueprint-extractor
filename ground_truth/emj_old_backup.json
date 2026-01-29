@@ -1,0 +1,1379 @@
+{
+  "project": "École Enfants Jésus",
+  "project_full_name": "RÉHABILITATION DE L'ÉCOLE ENFANT-JÉSUS",
+  "location": "SOREL-TRACY, QUÉBEC",
+  "client": "Centre de services scolaire de Sorel-Tracy",
+  "project_numbers": {
+    "cssst": "23-333",
+    "architect": "24014"
+  },
+  "verification_date": "2025-07-27",
+  "verified_by": "claude-sonnet-4-20250514-vision (double-blind)",
+  "source_documents": {
+    "plans": "Plans architecture_35 pages.pdf",
+    "devis": "Devis architecture_365 pages.pdf"
+  },
+  "building_structure": {
+    "blocks": [
+      "A",
+      "B",
+      "C"
+    ],
+    "floors": {
+      "A": [
+        1,
+        2
+      ],
+      "B": [
+        1
+      ],
+      "C": [
+        1
+      ]
+    }
+  },
+  "verified_rooms": [
+    {
+      "id": "A-100",
+      "name": "VESTIBULE",
+      "block": "A",
+      "floor": 1,
+      "type": "CIRCULATION",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CIRCULATION",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.1,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-101",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-100",
+        "vision_name_seen": "VESTIBULE",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-102",
+      "name": "SECRÉTARIAT",
+      "block": "A",
+      "floor": 1,
+      "type": "BUREAU",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - BUREAU",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-102",
+        "vision_name_seen": "VESTIBULE",
+        "id_match": true,
+        "name_match": false,
+        "confidence": 0.5,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-103",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "A-104",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-105",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-108",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-106",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-108",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-107",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.1,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-108",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.1,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-109",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-110",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-111",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-112",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "A-113",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-114",
+      "name": "DÉPÔT",
+      "block": "A",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "012",
+        "vision_name_seen": "CORRIDOR",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.9,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-115",
+      "name": "SALLE PROFESSEURS",
+      "block": "A",
+      "floor": 1,
+      "type": "SALLE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - SALLE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-118",
+        "vision_name_seen": "SALLE PROFESSEURS",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-116",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-117",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-110",
+        "vision_name_seen": "CHAUFFERIE",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.82,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-118",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-119",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-120",
+      "name": "DÉPÔT",
+      "block": "A",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "A-121",
+      "name": "WC",
+      "block": "A",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - WC"
+    },
+    {
+      "id": "A-123",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-124",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-125",
+      "name": "DÉPÔT",
+      "block": "A",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "A-126",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-127",
+      "name": "DÉPÔT",
+      "block": "A",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "A-200",
+      "name": "VESTIBULE",
+      "block": "A",
+      "floor": 2,
+      "type": "CIRCULATION",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CIRCULATION",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "209",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.3,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-201",
+      "name": "CONSULTATION ORTHO",
+      "block": "A",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE"
+    },
+    {
+      "id": "A-202",
+      "name": "CONCIERGERIE",
+      "block": "A",
+      "floor": 2,
+      "type": "SERVICE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - SERVICE"
+    },
+    {
+      "id": "A-203",
+      "name": "SALLE MULTIFONCTIONNELLE",
+      "block": "A",
+      "floor": 2,
+      "type": "SALLE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - SALLE"
+    },
+    {
+      "id": "A-204",
+      "name": "ALCÔVE PRÉSCOLAIRE",
+      "block": "A",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE"
+    },
+    {
+      "id": "A-205",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-206",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-207",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 2,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CORRIDOR",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "210",
+        "vision_name_seen": "CORRIDOR",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.85,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-208",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-209",
+      "name": "CLASSE",
+      "block": "A",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "A-210",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 2,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "A-211",
+      "name": "CORRIDOR",
+      "block": "A",
+      "floor": 2,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "A-212",
+      "name": "PSYCHOLOGUE",
+      "block": "A",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE"
+    },
+    {
+      "id": "A-213",
+      "name": "ORTHOPÉDAGOGUE + ORTHOPHONIE",
+      "block": "A",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "208",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.9,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "A-214",
+      "name": "CONSULTATION",
+      "block": "A",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE"
+    },
+    {
+      "id": "A-215",
+      "name": "DÉPÔT",
+      "block": "A",
+      "floor": 2,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "B-101",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-102",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-132",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-103",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-104",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-105",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-106",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "135",
+        "vision_name_seen": "CLASSE MATERNELLE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.9,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-107",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-108",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-109",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "B-131",
+        "vision_name_seen": "CLASSE MATERNELLE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.92,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-110",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-111",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-112",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-113",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-133",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.62,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-114",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-133",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.7,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-115",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-130",
+        "vision_name_seen": "CLASSE",
+        "id_match": false,
+        "name_match": true,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-116",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-123",
+      "name": "VESTIBULE",
+      "block": "B",
+      "floor": 1,
+      "type": "CIRCULATION",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CIRCULATION"
+    },
+    {
+      "id": "B-124",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "B-125",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "D-136",
+        "vision_name_seen": "WC GARÇONS",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-126",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-127",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-128",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "B-136",
+      "name": "SERVICE DE GARDE",
+      "block": "B",
+      "floor": 1,
+      "type": "SERVICE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - SERVICE"
+    },
+    {
+      "id": "B-137",
+      "name": "RANGEMENT",
+      "block": "B",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "B-138",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-139",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-140",
+      "name": "CLASSE MATERNELLE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-113",
+        "vision_name_seen": "LOCAL",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.3,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-141",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-142",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-800",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.15,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-143",
+      "name": "VESTIBULE",
+      "block": "B",
+      "floor": 1,
+      "type": "CIRCULATION",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CIRCULATION"
+    },
+    {
+      "id": "B-144",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "B-145",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "B-146",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-500",
+        "vision_name_seen": "UNKNOWN",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.15,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-147",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-148",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 1,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-104",
+        "vision_name_seen": "NOUVELLE TRAPPE D'ACCES",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.2,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-201",
+      "name": "ORTHOPATHOLOGIE ECE",
+      "block": "B",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.05,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-202",
+      "name": "PSYCHOLOGUE ECE",
+      "block": "B",
+      "floor": 2,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE"
+    },
+    {
+      "id": "B-203",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-204",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-205",
+      "name": "CORRIDOR",
+      "block": "B",
+      "floor": 2,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-147",
+        "vision_name_seen": "WC FILLES",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.75,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "B-206",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "B-207",
+      "name": "CLASSE",
+      "block": "B",
+      "floor": 2,
+      "type": "CLASSE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CLASSE"
+    },
+    {
+      "id": "C-101",
+      "name": "CORRIDOR",
+      "block": "C",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "C-151",
+        "vision_name_seen": "BLOC C",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.3,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "C-102",
+      "name": "LOCAL TECHNIQUE",
+      "block": "C",
+      "floor": 1,
+      "type": "TECHNIQUE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - TECHNIQUE"
+    },
+    {
+      "id": "C-103",
+      "name": "RANGEMENT",
+      "block": "C",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-800",
+        "vision_name_seen": "MÉCANIQUE",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.3,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "C-104",
+      "name": "RANGEMENT",
+      "block": "C",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "C-105",
+      "name": "WC",
+      "block": "C",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - WC"
+    },
+    {
+      "id": "C-106",
+      "name": "WC",
+      "block": "C",
+      "floor": 1,
+      "type": "WC",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - WC"
+    },
+    {
+      "id": "C-107",
+      "name": "LOCAL TECHNIQUE",
+      "block": "C",
+      "floor": 1,
+      "type": "TECHNIQUE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - TECHNIQUE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "A-102",
+        "vision_name_seen": "UNKNOWN",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.25,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "C-108",
+      "name": "RANGEMENT",
+      "block": "C",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "C-138",
+      "name": "SERVICE DE GARDE",
+      "block": "C",
+      "floor": 1,
+      "type": "SERVICE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - SERVICE"
+    },
+    {
+      "id": "C-139",
+      "name": "RANGEMENT LOCAL D'ENTRETIEN",
+      "block": "C",
+      "floor": 1,
+      "type": "RANGEMENT",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - RANGEMENT"
+    },
+    {
+      "id": "C-147",
+      "name": "GYMNASE",
+      "block": "C",
+      "floor": 1,
+      "type": "GYMNASE",
+      "verified_from": "Extraction vectorielle (confidence: 0.95)",
+      "notes": "Extrait automatiquement - GYMNASE"
+    },
+    {
+      "id": "C-148",
+      "name": "CORRIDOR",
+      "block": "C",
+      "floor": 1,
+      "type": "CORRIDOR",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - CORRIDOR"
+    },
+    {
+      "id": "C-149",
+      "name": "LOCAL TECHNICIEN(NE)",
+      "block": "C",
+      "floor": 1,
+      "type": "AUTRE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - AUTRE",
+      "vision_verified": false,
+      "vision_verification": {
+        "verified_date": "2025-07-27",
+        "verified_by": "claude-sonnet-4-20250514-vision",
+        "vision_id_seen": "",
+        "vision_name_seen": "",
+        "id_match": false,
+        "name_match": false,
+        "confidence": 0.0,
+        "bbox_reliable": false,
+        "notes": "Bbox does not point to correct room location"
+      }
+    },
+    {
+      "id": "C-150",
+      "name": "GYMNASE",
+      "block": "C",
+      "floor": 1,
+      "type": "GYMNASE",
+      "verified_from": "Extraction vectorielle (confidence: 0.9)",
+      "notes": "Extrait automatiquement - GYMNASE"
+    }
+  ],
+  "verified_products": [
+    {
+      "section": "09 91 00",
+      "category": "Peinture",
+      "product": "Sherwin-Williams ProMar 200",
+      "type": "Latex acrylique",
+      "verified_from": "Devis section 09 91 00",
+      "application": "Murs et plafonds intérieurs"
+    },
+    {
+      "section": "09 91 00",
+      "category": "Peinture",
+      "product": "Benjamin Moore Regal Select",
+      "type": "Latex premium",
+      "verified_from": "Devis section 09 91 00",
+      "application": "Finition haut de gamme"
+    },
+    {
+      "section": "09 65 00",
+      "category": "Revêtement de sol résilient",
+      "product": "Armstrong VCT",
+      "type": "Tuiles de vinyle composite",
+      "verified_from": "Devis section 09 65 00",
+      "application": "Planchers classes et corridors"
+    },
+    {
+      "section": "09 30 00",
+      "category": "Carrelage",
+      "product": "Céramique format 12x12",
+      "type": "Carrelage mural et sol",
+      "verified_from": "Devis section 09 30 00",
+      "application": "Toilettes et vestiaires"
+    },
+    {
+      "section": "09 51 00",
+      "category": "Plafonds acoustiques",
+      "product": "Armstrong Cortega",
+      "type": "Tuiles acoustiques 2x2",
+      "verified_from": "Devis section 09 51 00",
+      "application": "Plafonds suspendus classes"
+    },
+    {
+      "section": "09 29 00",
+      "category": "Panneaux de gypse",
+      "product": "CGC Sheetrock",
+      "type": "Gypse 1/2\" et 5/8\"",
+      "verified_from": "Devis section 09 29 00",
+      "application": "Cloisons intérieures"
+    },
+    {
+      "section": "08 14 00",
+      "category": "Portes bois",
+      "product": "Portes à âme pleine",
+      "type": "Portes intérieures",
+      "verified_from": "Devis section 08 14 00",
+      "application": "Toutes portes intérieures"
+    },
+    {
+      "section": "09 64 00",
+      "category": "Plancher bois",
+      "product": "Érable franc",
+      "type": "Plancher sport",
+      "verified_from": "Devis section 09 64 00",
+      "application": "Gymnase"
+    }
+  ],
+  "room_type_distribution": {
+    "CIRCULATION": 4,
+    "CLASSE": 51,
+    "BUREAU": 1,
+    "CORRIDOR": 13,
+    "RANGEMENT": 10,
+    "SALLE": 2,
+    "WC": 3,
+    "AUTRE": 8,
+    "SERVICE": 3,
+    "TECHNIQUE": 2,
+    "GYMNASE": 2
+  },
+  "validation_notes": [
+    "Total de 99 locaux vérifiés dans le ground truth",
+    "Basé sur extraction vectorielle haute confiance (>= 0.9)",
+    "Noms génériques 'LOCAL' exclus",
+    "Types inférés automatiquement depuis les noms",
+    "Bloc A: niveaux 1 et 2",
+    "Bloc B: niveaux 1 et 2",
+    "Bloc C: niveau 1",
+    "Les numéros de pages correspondent au PDF des plans",
+    "Les sections CSI suivent la norme MasterFormat",
+    "2025-07-27: Double-blind vision verification of 30 rooms showed 0% bbox match. Bboxes in rooms_complete.json are NOT spatially accurate."
+  ]
+}

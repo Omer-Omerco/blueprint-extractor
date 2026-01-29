@@ -1,0 +1,272 @@
+[
+  {
+    "room_id": "A-213",
+    "gt_name": "ORTHOPÉDAGOGUE + ORTHOPHONIE",
+    "block": "A",
+    "floor": 2,
+    "type": "AUTRE",
+    "crop_file": "crop_A_213.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-107",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_107.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-101",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_101.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-117",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_117.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-115",
+    "gt_name": "SALLE PROFESSEURS",
+    "block": "A",
+    "floor": 1,
+    "type": "SALLE",
+    "crop_file": "crop_A_115.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-114",
+    "gt_name": "DÉPÔT",
+    "block": "A",
+    "floor": 1,
+    "type": "RANGEMENT",
+    "crop_file": "crop_A_114.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-108",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_108.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-106",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_106.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-207",
+    "gt_name": "CORRIDOR",
+    "block": "A",
+    "floor": 2,
+    "type": "CORRIDOR",
+    "crop_file": "crop_A_207.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-105",
+    "gt_name": "CLASSE",
+    "block": "A",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_A_105.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-200",
+    "gt_name": "VESTIBULE",
+    "block": "A",
+    "floor": 2,
+    "type": "CIRCULATION",
+    "crop_file": "crop_A_200.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-102",
+    "gt_name": "SECRÉTARIAT",
+    "block": "A",
+    "floor": 1,
+    "type": "BUREAU",
+    "crop_file": "crop_A_102.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "A-100",
+    "gt_name": "VESTIBULE",
+    "block": "A",
+    "floor": 1,
+    "type": "CIRCULATION",
+    "crop_file": "crop_A_100.png",
+    "bbox_source": "page-012.png"
+  },
+  {
+    "room_id": "B-106",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_106.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-114",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_114.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-115",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_115.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-146",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_146.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-102",
+    "gt_name": "CLASSE MATERNELLE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_102.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-201",
+    "gt_name": "ORTHOPATHOLOGIE ECE",
+    "block": "B",
+    "floor": 2,
+    "type": "AUTRE",
+    "crop_file": "crop_B_201.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-113",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_113.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-148",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_148.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-140",
+    "gt_name": "CLASSE MATERNELLE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_140.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-205",
+    "gt_name": "CORRIDOR",
+    "block": "B",
+    "floor": 2,
+    "type": "CORRIDOR",
+    "crop_file": "crop_B_205.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-142",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_142.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-125",
+    "gt_name": "CORRIDOR",
+    "block": "B",
+    "floor": 1,
+    "type": "CORRIDOR",
+    "crop_file": "crop_B_125.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "B-109",
+    "gt_name": "CLASSE",
+    "block": "B",
+    "floor": 1,
+    "type": "CLASSE",
+    "crop_file": "crop_B_109.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "C-149",
+    "gt_name": "LOCAL TECHNICIEN(NE)",
+    "block": "C",
+    "floor": 1,
+    "type": "AUTRE",
+    "crop_file": "crop_C_149.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "C-101",
+    "gt_name": "CORRIDOR",
+    "block": "C",
+    "floor": 1,
+    "type": "CORRIDOR",
+    "crop_file": "crop_C_101.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "C-103",
+    "gt_name": "RANGEMENT",
+    "block": "C",
+    "floor": 1,
+    "type": "RANGEMENT",
+    "crop_file": "crop_C_103.png",
+    "bbox_source": "page-010.png"
+  },
+  {
+    "room_id": "C-107",
+    "gt_name": "LOCAL TECHNIQUE",
+    "block": "C",
+    "floor": 1,
+    "type": "TECHNIQUE",
+    "crop_file": "crop_C_107.png",
+    "bbox_source": "page-010.png"
+  }
+]
