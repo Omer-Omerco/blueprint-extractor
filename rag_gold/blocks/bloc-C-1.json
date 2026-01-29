@@ -1,0 +1,116 @@
+{
+  "block": "C-1",
+  "rooms": [
+    {
+      "type": "room",
+      "id": "C-146",
+      "plan_id": "146",
+      "name": "WC GARÇONS",
+      "block": "C",
+      "floor": 1,
+      "room_type": "WC",
+      "confidence": "HIGH",
+      "source": "plan construction p.A-151, plan agrandis p.A-700, devis group 018 (toilette)",
+      "source_document": "C25-256 _Architecture_plan_Construction.pdf + Devis architecture_365 pages.pdf",
+      "source_pages": [
+        "A-151",
+        "A-700"
+      ],
+      "devis_ref": "group 018: toilette",
+      "door_schedule": null,
+      "notes": null,
+      "area_pica": null,
+      "search_text": "wc garçons 146 c-146 wc c toilette wc salle de bain bathroom 1er étage rez-de-chaussée premier",
+      "verified": true
+    },
+    {
+      "type": "room",
+      "id": "C-147",
+      "plan_id": "147",
+      "name": "WC FILLES",
+      "block": "C",
+      "floor": 1,
+      "room_type": "WC",
+      "confidence": "HIGH",
+      "source": "plan construction p.A-151, plan agrandis p.A-700, devis group 018 (toilette)",
+      "source_document": "C25-256 _Architecture_plan_Construction.pdf + Devis architecture_365 pages.pdf",
+      "source_pages": [
+        "A-151",
+        "A-700"
+      ],
+      "devis_ref": "group 018: toilette",
+      "door_schedule": null,
+      "notes": null,
+      "area_pica": null,
+      "search_text": "wc filles 147 c-147 wc c toilette wc salle de bain bathroom 1er étage rez-de-chaussée premier",
+      "verified": true
+    },
+    {
+      "type": "room",
+      "id": "C-148",
+      "plan_id": "148",
+      "name": "CORRIDOR",
+      "block": "C",
+      "floor": 1,
+      "room_type": "CORRIDOR",
+      "confidence": "HIGH",
+      "source": "plan construction p.A-151, plan plafond p.A-201",
+      "source_document": "C25-256 _Architecture_plan_Construction.pdf",
+      "source_pages": [
+        "A-151",
+        "A-201"
+      ],
+      "devis_ref": null,
+      "door_schedule": null,
+      "notes": null,
+      "area_pica": null,
+      "search_text": "corridor 148 c-148 corridor c corridor couloir hall passage 1er étage rez-de-chaussée premier",
+      "verified": true
+    },
+    {
+      "type": "room",
+      "id": "C-150",
+      "plan_id": "150",
+      "name": "LOCAL TECHNIQUE/DÉPÔT",
+      "block": "C",
+      "floor": 1,
+      "room_type": "LOCAL TECHNIQUE",
+      "confidence": "HIGH",
+      "source": "plan construction p.A-151, plan plafond p.A-201, devis group 019 (local technique/dépôt)",
+      "source_document": "C25-256 _Architecture_plan_Construction.pdf + Devis architecture_365 pages.pdf",
+      "source_pages": [
+        "A-151",
+        "A-201"
+      ],
+      "devis_ref": "group 019: local technique / dépôt (porte double)",
+      "door_schedule": null,
+      "notes": null,
+      "area_pica": null,
+      "search_text": "local technique/dépôt 150 c-150 local technique c dépôt rangement storage entrepôt 1er étage rez-de-chaussée premier",
+      "verified": true
+    },
+    {
+      "type": "room",
+      "id": "C-151",
+      "plan_id": "151",
+      "name": "GYMNASE",
+      "block": "C",
+      "floor": 1,
+      "room_type": "GYMNASE",
+      "confidence": "HIGH",
+      "source": "plan construction p.A-151, plan plafond p.A-201",
+      "source_document": "C25-256 _Architecture_plan_Construction.pdf",
+      "source_pages": [
+        "A-151",
+        "A-201"
+      ],
+      "devis_ref": null,
+      "door_schedule": "door G (double) from 151 to 148",
+      "notes": null,
+      "area_pica": null,
+      "search_text": "gymnase 151 c-151 gymnase c gymnase gym 1er étage rez-de-chaussée premier",
+      "verified": true
+    }
+  ],
+  "count": 5
+}
